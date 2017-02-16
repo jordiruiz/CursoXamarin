@@ -1,0 +1,17 @@
+﻿***REMOVED***
+  "dependencies": ***REMOVED***
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+    "Xamarin.Forms": "2.0.0.6482"
+  ***REMOVED***,
+  "frameworks": ***REMOVED***
+    "uap10.0": ***REMOVED******REMOVED***
+  ***REMOVED***,
+  "runtimes": ***REMOVED***
+    "win10-arm": ***REMOVED******REMOVED***,
+    "win10-arm-aot": ***REMOVED******REMOVED***,
+    "win10-x86": ***REMOVED******REMOVED***,
+    "win10-x86-aot": ***REMOVED******REMOVED***,
+    "win10-x64": ***REMOVED******REMOVED***,
+    "win10-x64-aot": ***REMOVED******REMOVED***
+  ***REMOVED***
+***REMOVED***

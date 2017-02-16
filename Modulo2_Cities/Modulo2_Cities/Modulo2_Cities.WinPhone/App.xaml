@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Modulo2_Cities.WinPhone.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Modulo2_Cities.WinPhone">
+
+</Application>
