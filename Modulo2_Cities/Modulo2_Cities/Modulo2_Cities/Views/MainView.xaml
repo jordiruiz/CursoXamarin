@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="Modulo2_Cities.Views.MainView"
+             Title="Xamagram">  
+  <ContentPage.Content>
+    <ListView
+      ItemsSource="***REMOVED***Binding Cities***REMOVED***"
+      ItemTapped="Handle_ItemTapped"
+      HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="5" /> 
+                  <RowDefinition Height="15" />                  
+                  <RowDefinition Height="15" />
+                  <RowDefinition Height="5" /> 
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="60" />
+                  <ColumnDefinition Width="5" />
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!-- Row 0 (empty)-->
+                <!-- Row 1-->
+                <Image 
+                  Grid.Row="1"
+                  Grid.Column="0"
+                  Grid.RowSpan="2"
+                  Source="***REMOVED***Binding Image***REMOVED***"
+                  Aspect="AspectFit"
+                />
+                <Label
+                  Grid.Row="1"
+                  Grid.Column="2"
+                  Text="***REMOVED***Binding Name***REMOVED***"
+                  TextColor="Fuchsia"
+                  FontSize="12"
+                />
+                <!-- Row 2-->
+                <Label
+                  Grid.Row="2"
+                  Grid.Column="2"
+                  Text="***REMOVED***Binding Detail***REMOVED***"
+                  TextColor="Gray"
+                  FontSize="10"
+                  LineBreakMode="NoWrap"
+                />
+                <!-- Row 3 (empty)-->
+              </Grid>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    </ContentPage.Content>
+</ContentPage>

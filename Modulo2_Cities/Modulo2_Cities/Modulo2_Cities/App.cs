@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modulo2_Cities.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,23 +12,7 @@ namespace Modulo2_Cities
     ***REMOVED***
         public App()
         ***REMOVED***
-            // The root page of your application
-            var content = new ContentPage
-            ***REMOVED***
-                Title = "Modulo2_Cities",
-                Content = new StackLayout
-                ***REMOVED***
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = ***REMOVED***
-                        new Label ***REMOVED***
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                    ***REMOVED***
-                ***REMOVED***
-            ***REMOVED***
-        ***REMOVED***;
-
-            MainPage = new NavigationPage(content);
+            MainPage = new NavigationPage(new MainView());
     ***REMOVED***
 
         protected override void OnStart()

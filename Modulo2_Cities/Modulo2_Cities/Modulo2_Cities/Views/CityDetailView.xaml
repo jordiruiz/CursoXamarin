@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modulo2_Cities.Views.CityDetailView"
+             Title="***REMOVED***Binding City.Name***REMOVED***">
+  <StackLayout>
+    <Image 
+      Aspect="AspectFill"
+      Source="***REMOVED***Binding City.Image***REMOVED***"
+      />
+    <Label 
+      Text="***REMOVED***Binding City.Name***REMOVED***" 
+    />
+    <Label 
+      Text="***REMOVED***Binding City.Detail***REMOVED***" 
+    />
+  </StackLayout>  
+</ContentPage>

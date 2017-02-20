@@ -1,7 +1,7 @@
 ﻿***REMOVED***
   "dependencies": ***REMOVED***
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Xamarin.Forms": "2.0.0.6482"
+    "Xamarin.Forms": "2.3.3.180"
   ***REMOVED***,
   "frameworks": ***REMOVED***
     "uap10.0": ***REMOVED******REMOVED***
