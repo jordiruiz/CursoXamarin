@@ -7,6 +7,7 @@
     <ListView
       ItemsSource="***REMOVED***Binding Cities***REMOVED***"
       ItemTapped="Handle_ItemTapped"
+      SelectedItem="***REMOVED***Binding objItemSelected, Mode=TwoWay***REMOVED***"
       HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>

@@ -12,6 +12,31 @@ namespace Modulo2_Cities.ViewModels
         public MainViewModel()
         ***REMOVED***            
             Cities = CitiesService.GetCities();
-    ***REMOVED***        
+    ***REMOVED***
+
+        private City _ItemSelected;
+        public City objItemSelected
+        ***REMOVED***
+            get
+            ***REMOVED***
+                return _ItemSelected;
+        ***REMOVED***
+            set
+            ***REMOVED***
+                if (_ItemSelected != value)
+                ***REMOVED***
+                    _ItemSelected = value;
+                    OnPropertyChanged("ItemSelected");
+
+                    City c = new City();
+                    c.Name = _ItemSelected.Name;
+                    c.Location = _ItemSelected.Location;
+                    c.Details = _ItemSelected.Details;
+                    c.Image = _ItemSelected.Image;
+                    Cities = new ObservableCollection<City> ***REMOVED*** c ***REMOVED***;
+                    Application.Current.MainPage.Navigation.PushAsync(new CityDetailsView3(Cities));
+            ***REMOVED***
+        ***REMOVED***
+    ***REMOVED***
 ***REMOVED***
 ***REMOVED***
