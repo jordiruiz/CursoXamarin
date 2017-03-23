@@ -1,8 +1,4 @@
 ﻿using Modulo2_Cities.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Xamarin.Forms;
 
@@ -12,7 +8,7 @@ namespace Modulo2_Cities
     ***REMOVED***
         public App()
         ***REMOVED***
-            MainPage = new NavigationPage(new MainView());
+            MainPage = new NavigationPage(new MainView());            
     ***REMOVED***
 
         protected override void OnStart()

@@ -10,9 +10,10 @@
       />
     <Label 
       Text="***REMOVED***Binding City.Name***REMOVED***" 
+      FontSize="Large"
     />
     <Label 
       Text="***REMOVED***Binding City.Detail***REMOVED***" 
-    />
+    />    
   </StackLayout>  
 </ContentPage>

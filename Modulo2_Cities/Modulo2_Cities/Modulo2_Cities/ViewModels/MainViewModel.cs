@@ -1,5 +1,6 @@
 ﻿using Modulo2_Cities.Models;
 using Modulo2_Cities.Services;
+using Modulo2_Cities.Views;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
@@ -7,35 +8,32 @@ namespace Modulo2_Cities.ViewModels
 ***REMOVED***
     public class MainViewModel : BindableObject
     ***REMOVED***
-        public ObservableCollection<City> Cities ***REMOVED*** get; set; ***REMOVED***
+        public ObservableCollection<City> _cities;
+        private City _selectedItem;
 
         public MainViewModel()
         ***REMOVED***            
-            Cities = CitiesService.GetCities();
+            Cities = CitiesService.Instance.GetCities();
     ***REMOVED***
-
-        private City _ItemSelected;
-        public City objItemSelected
+        
+        public ObservableCollection<City> Cities
         ***REMOVED***
-            get
-            ***REMOVED***
-                return _ItemSelected;
-        ***REMOVED***
+            get ***REMOVED*** return _cities; ***REMOVED***
             set
             ***REMOVED***
-                if (_ItemSelected != value)
-                ***REMOVED***
-                    _ItemSelected = value;
-                    OnPropertyChanged("ItemSelected");
+                _cities = value;
+                OnPropertyChanged("Cities");
+        ***REMOVED***
+    ***REMOVED***
 
-                    City c = new City();
-                    c.Name = _ItemSelected.Name;
-                    c.Location = _ItemSelected.Location;
-                    c.Details = _ItemSelected.Details;
-                    c.Image = _ItemSelected.Image;
-                    Cities = new ObservableCollection<City> ***REMOVED*** c ***REMOVED***;
-                    Application.Current.MainPage.Navigation.PushAsync(new CityDetailsView3(Cities));
+        public City SelectedItem
+        ***REMOVED***
+            get ***REMOVED*** return _selectedItem; ***REMOVED***
+            set
             ***REMOVED***
+                _selectedItem = value;
+
+                NavigationService.Instance.NavigateTo<CityDetailViewModel>(_selectedItem);
         ***REMOVED***
     ***REMOVED***
 ***REMOVED***
