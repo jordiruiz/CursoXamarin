@@ -10,9 +10,10 @@
       />
     <Label 
       Text="{Binding City.Name}" 
+      FontSize="Large"
     />
     <Label 
       Text="{Binding City.Detail}" 
-    />
+    />    
   </StackLayout>  
 </ContentPage>

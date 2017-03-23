@@ -44,6 +44,7 @@
       <DependentUpon>CitiesDetail.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\CitiesService.cs" />
+    <Compile Include="Services\NavigationService.cs" />
     <Compile Include="ViewModels\CityDetailViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\CityDetailView.xaml.cs">

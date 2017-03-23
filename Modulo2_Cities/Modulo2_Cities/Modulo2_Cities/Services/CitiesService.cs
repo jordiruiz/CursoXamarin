@@ -5,9 +5,24 @@ using Xamarin.Forms;
 
 namespace Modulo2_Cities.Services
 {
-    public static class CitiesService
+    public class CitiesService
     {
-        public static ObservableCollection<City> GetCities()
+        private static CitiesService _instance;
+
+        public static CitiesService Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new CitiesService();
+                }
+
+                return _instance;
+            }
+        }
+
+        public ObservableCollection<City> GetCities()
         {
             return new ObservableCollection<City>
             {
@@ -49,7 +64,5 @@ namespace Modulo2_Cities.Services
                 }
             };
         }
-
-
     }
 }

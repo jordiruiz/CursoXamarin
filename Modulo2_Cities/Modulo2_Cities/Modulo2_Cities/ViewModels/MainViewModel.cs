@@ -1,5 +1,6 @@
 ﻿using Modulo2_Cities.Models;
 using Modulo2_Cities.Services;
+using Modulo2_Cities.Views;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
@@ -7,35 +8,32 @@ namespace Modulo2_Cities.ViewModels
 {
     public class MainViewModel : BindableObject
     {
-        public ObservableCollection<City> Cities { get; set; }
+        public ObservableCollection<City> _cities;
+        private City _selectedItem;
 
         public MainViewModel()
         {            
-            Cities = CitiesService.GetCities();
+            Cities = CitiesService.Instance.GetCities();
         }
-
-        private City _ItemSelected;
-        public City objItemSelected
+        
+        public ObservableCollection<City> Cities
         {
-            get
-            {
-                return _ItemSelected;
-            }
+            get { return _cities; }
             set
             {
-                if (_ItemSelected != value)
-                {
-                    _ItemSelected = value;
-                    OnPropertyChanged("ItemSelected");
+                _cities = value;
+                OnPropertyChanged("Cities");
+            }
+        }
 
-                    City c = new City();
-                    c.Name = _ItemSelected.Name;
-                    c.Location = _ItemSelected.Location;
-                    c.Details = _ItemSelected.Details;
-                    c.Image = _ItemSelected.Image;
-                    Cities = new ObservableCollection<City> { c };
-                    Application.Current.MainPage.Navigation.PushAsync(new CityDetailsView3(Cities));
-                }
+        public City SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                _selectedItem = value;
+
+                NavigationService.Instance.NavigateTo<CityDetailViewModel>(_selectedItem);
             }
         }
     }
