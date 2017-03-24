@@ -1,28 +1,28 @@
 ﻿using Modulo2_Cities.Models;
 using Modulo2_Cities.Resources.Texts;
+using Ninject;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
 namespace Modulo2_Cities.Services
 ***REMOVED***
-    public class CitiesService
+    public class CityService : IRepoService<City>
     ***REMOVED***
-        private static CitiesService _instance;
+        private static CityService _instance;
 
-        public static CitiesService Instance
+        public static CityService GetInstance(IKernel kernelForInjection)
         ***REMOVED***
-            get
+            if (_instance == null)
             ***REMOVED***
-                if (_instance == null)
-                ***REMOVED***
-                    _instance = new CitiesService();
-            ***REMOVED***
+                _instance = new CityService();
 
-                return _instance;
+                kernelForInjection.Inject(_instance);
         ***REMOVED***
+
+            return _instance;
     ***REMOVED***
 
-        public ObservableCollection<City> GetCities()
+        public ObservableCollection<City> GetAll()
         ***REMOVED***
             return new ObservableCollection<City>
             ***REMOVED***
