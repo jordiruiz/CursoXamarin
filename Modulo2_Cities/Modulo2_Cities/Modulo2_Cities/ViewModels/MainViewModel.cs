@@ -10,10 +10,13 @@ namespace Modulo2_Cities.ViewModels
     {
         public ObservableCollection<City> _cities;
         private City _selectedItem;
+        private IRepoService<City> _cityService;
 
         public MainViewModel()
-        {            
-            Cities = CitiesService.Instance.GetCities();
+        {
+            _cityService = App.Container.GetService(typeof(IRepoService<City>)) as IRepoService<City>;
+
+            Cities = _cityService.GetAll();
         }
         
         public ObservableCollection<City> Cities
