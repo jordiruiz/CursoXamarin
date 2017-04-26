@@ -2,9 +2,7 @@
 using CursoXamarin.Resources.Texts;
 using Ninject;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace CursoXamarin.Services
 {

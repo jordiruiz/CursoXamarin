@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-
 namespace CursoXamarin.Services
 {
     public class NavigationService
