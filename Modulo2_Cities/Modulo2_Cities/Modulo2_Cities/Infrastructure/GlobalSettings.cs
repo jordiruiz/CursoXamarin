@@ -2,6 +2,6 @@
 ***REMOVED***
 ***REMOVED***
     ***REMOVED***
-        public const string CityMobileServiceEndpoint = "http://modulo3citiesazurebackend.azurewebsites.net";
+        public const string CityMobileServiceEndpoint = "***REMOVED***";
 ***REMOVED***
 ***REMOVED***
