@@ -1,0 +1,18 @@
+﻿body ***REMOVED***
+    padding-top: 50px;
+    padding-bottom: 20px;
+***REMOVED***
+
+/* Set padding to keep content from hitting the edges */
+.body-content ***REMOVED***
+    padding-left: 15px;
+    padding-right: 15px;
+***REMOVED***
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea ***REMOVED***
+    max-width: 280px;
+***REMOVED***
+
