@@ -23,9 +23,9 @@
     <key>MinimumOSVersion</key>
     <string>6.0</string>
     <key>CFBundleDisplayName</key>
-    <string>Modulo2_Cities</string>
+    <string>CursoXamarin</string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.Modulo2_Cities</string>
+    <string>com.yourcompany.CursoXamarin</string>
     <key>CFBundleVersion</key>
     <string>1.0</string>
     <key>CFBundleIconFiles</key>

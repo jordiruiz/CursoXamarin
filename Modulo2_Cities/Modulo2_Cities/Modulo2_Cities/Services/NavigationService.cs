@@ -1,11 +1,10 @@
-﻿using Modulo2_Cities.ViewModels;
-using Modulo2_Cities.Views;
+﻿using CursoXamarin.ViewModels;
+using CursoXamarin.Views;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-
-namespace Modulo2_Cities.Services
+namespace CursoXamarin.Services
 ***REMOVED***
     public class NavigationService
     ***REMOVED***
