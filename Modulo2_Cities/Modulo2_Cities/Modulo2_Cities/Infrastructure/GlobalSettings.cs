@@ -1,4 +1,4 @@
-﻿namespace Modulo2_Cities.Infrastructure
+﻿namespace CursoXamarin.Infrastructure
 {
     public static class GlobalSettings
     {

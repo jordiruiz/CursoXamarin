@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Modulo2_Cities.Models
+namespace CursoXamarin.Models
 {
     public class City
     {

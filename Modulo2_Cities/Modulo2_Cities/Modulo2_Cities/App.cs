@@ -1,9 +1,9 @@
-﻿using Modulo2_Cities.Infrastructure;
-using Modulo2_Cities.Views;
+﻿using CursoXamarin.Infrastructure;
+using CursoXamarin.Views;
 using Ninject;
 using Xamarin.Forms;
 
-namespace Modulo2_Cities
+namespace CursoXamarin
 {
     public class App : Application
     {

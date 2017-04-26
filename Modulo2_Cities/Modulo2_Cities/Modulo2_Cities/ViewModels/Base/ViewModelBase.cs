@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Modulo2_Cities.ViewModels.Base
+namespace CursoXamarin.ViewModels.Base
 {
     public class ViewModelBase : BindableObject
     {

@@ -1,7 +1,7 @@
-﻿using Modulo2_Cities.ViewModels;
+﻿using CursoXamarin.ViewModels;
 using Xamarin.Forms;
 
-namespace Modulo2_Cities.Views
+namespace CursoXamarin.Views
 {
     public partial class MainView : ContentPage
     {

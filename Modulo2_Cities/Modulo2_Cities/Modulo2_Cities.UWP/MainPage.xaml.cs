@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Modulo2_Cities.UWP
+namespace CursoXamarin.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace Modulo2_Cities.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new Modulo2_Cities.App());
+            LoadApplication(new CursoXamarin.App());
         }
     }
 }

@@ -1,9 +1,9 @@
-﻿using Modulo2_Cities.Models;
-using Modulo2_Cities.ViewModels;
+﻿using CursoXamarin.Models;
+using CursoXamarin.ViewModels;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
-namespace Modulo2_Cities.Views
+namespace CursoXamarin.Views
 {
     public partial class CityDetailView : ContentPage
     {

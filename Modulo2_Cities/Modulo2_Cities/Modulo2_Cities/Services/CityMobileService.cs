@@ -1,11 +1,11 @@
 ﻿using Microsoft.WindowsAzure.MobileServices;
-using Modulo2_Cities.Infrastructure;
-using Modulo2_Cities.Models;
+using CursoXamarin.Infrastructure;
+using CursoXamarin.Models;
 using Ninject;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Modulo2_Cities.Services
+namespace CursoXamarin.Services
 {
     public class CityMobileService : IRepoService<City>
     {

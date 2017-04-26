@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Modulo2_Cities.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("CursoXamarin.Droid.Resource", IsApplication=true)]
 
-namespace Modulo2_Cities.Droid
+namespace CursoXamarin.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Modulo2_Cities.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Modulo2_Cities.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::CursoXamarin.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

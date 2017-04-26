@@ -1,8 +1,8 @@
 using Ninject.Modules;
-using Modulo2_Cities.Services;
-using Modulo2_Cities.Models;
+using CursoXamarin.Services;
+using CursoXamarin.Models;
 
-namespace Modulo2_Cities.Infrastructure
+namespace CursoXamarin.Infrastructure
 {
     public class IOCModule : NinjectModule
     {
