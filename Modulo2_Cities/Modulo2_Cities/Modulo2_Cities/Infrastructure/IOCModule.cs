@@ -8,7 +8,10 @@ namespace Modulo2_Cities.Infrastructure
     {
         public override void Load()
         {
-            Bind<IRepoService<City>>().ToMethod(c => CityService.GetInstance(c.Kernel));
+            //repo local
+            //Bind<IRepoService<City>>().ToMethod(c => CityService.GetInstance(c.Kernel));
+            //repo azure
+            Bind<IRepoService<City>>().ToMethod(c => CityMobileService.GetInstance(c.Kernel));
         }
     }
 }

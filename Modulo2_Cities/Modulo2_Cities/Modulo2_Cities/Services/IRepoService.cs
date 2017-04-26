@@ -1,9 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Modulo2_Cities.Services
 {
     public interface IRepoService<T> where T:class,new()
     {
-        ObservableCollection<T> GetAll();
+        Task<IEnumerable<T>> GetAll();
     }
 }

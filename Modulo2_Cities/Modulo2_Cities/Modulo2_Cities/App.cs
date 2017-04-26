@@ -15,7 +15,7 @@ namespace Modulo2_Cities
 
             Container = kernel;
 
-            MainPage = new NavigationPage(new MainView());            
+            MainPage = new NavigationPage(new MainView(null));            
         }
         
 
