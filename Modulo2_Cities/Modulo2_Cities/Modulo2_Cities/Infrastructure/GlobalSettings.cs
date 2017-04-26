@@ -2,6 +2,6 @@
 {
     public static class GlobalSettings
     {
-        public const string CityMobileServiceEndpoint = "http://modulo3citiesazurebackend.azurewebsites.net";
+        public const string CityMobileServiceEndpoint = "https://modulo3backend.azurewebsites.net";
     }
 }
