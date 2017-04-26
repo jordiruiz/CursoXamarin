@@ -1,7 +1,9 @@
 ﻿using Modulo2_Cities.Models;
 using Modulo2_Cities.Resources.Texts;
 using Ninject;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Modulo2_Cities.Services
@@ -22,47 +24,54 @@ namespace Modulo2_Cities.Services
             return _instance;
     ***REMOVED***
 
-        public ObservableCollection<City> GetAll()
+        public Task<IEnumerable<City>> GetAll()
         ***REMOVED***
-            return new ObservableCollection<City>
+            var tarea = new Task<IEnumerable<City>>(() =>
             ***REMOVED***
-                new City
+                return new City[]
                 ***REMOVED***
-                    Name = "New York",
-                    Detail = CitiesDetail.NewYok,
-                    Image = ImageSource.FromResource("Modulo2_Cities.Resources.Images.NewYork.png"),                    
-            ***REMOVED***,
-                new City
+                    new City
+                    ***REMOVED***
+                        Name = "New York",
+                        Detail = CitiesDetail.NewYok,
+                        Image = "Modulo2_Cities.Resources.Images.NewYork.png",
+                ***REMOVED***,
+                    new City
+                    ***REMOVED***
+                        Name = "Paris",
+                        Detail = CitiesDetail.Paris,
+                        Image = "Modulo2_Cities.Resources.Images.Paris.png",
+                ***REMOVED***,
+                    new City
+                    ***REMOVED***
+                        Name = "Roma",
+                        Detail = CitiesDetail.Roma,
+                        Image = "Modulo2_Cities.Resources.Images.Roma.png",
+                ***REMOVED***,
+                    new City
+                    ***REMOVED***
+                        Name = "San Francisco",
+                        Detail = CitiesDetail.SanFrancisco,
+                        Image = "Modulo2_Cities.Resources.Images.SanFrancisco.png",
+                ***REMOVED***,
+                    new City
+                    ***REMOVED***
+                        Name = "Seattle",
+                        Detail = CitiesDetail.Seattle,
+                        Image = "Modulo2_Cities.Resources.Images.Seattle.png",
+                ***REMOVED***,
+                    new City
+                    ***REMOVED***
+                        Name = "Sevilla",
+                        Detail = CitiesDetail.Sevilla,
+                        Image = "Modulo2_Cities.Resources.Images.Sevilla.png",
                 ***REMOVED***
-                    Name = "Paris",
-                    Detail = CitiesDetail.Paris,
-                    Image = ImageSource.FromResource("Modulo2_Cities.Resources.Images.Paris.png"),                    
-            ***REMOVED***,
-                new City
-                ***REMOVED***
-                    Name = "Roma",
-                    Detail = CitiesDetail.Roma,
-                    Image = ImageSource.FromResource("Modulo2_Cities.Resources.Images.Roma.png"),                    
-            ***REMOVED***,
-                new City
-                ***REMOVED***
-                    Name = "San Francisco",
-                    Detail = CitiesDetail.SanFrancisco,
-                    Image = ImageSource.FromResource("Modulo2_Cities.Resources.Images.SanFrancisco.png"),                    
-            ***REMOVED***,
-                new City
-                ***REMOVED***
-                    Name = "Seattle",
-                    Detail = CitiesDetail.Seattle,
-                    Image = ImageSource.FromResource("Modulo2_Cities.Resources.Images.Seattle.png"),                    
-            ***REMOVED***,
-                new City
-                ***REMOVED***
-                    Name = "Sevilla",
-                    Detail = CitiesDetail.Sevilla,
-                    Image = ImageSource.FromResource("Modulo2_Cities.Resources.Images.Sevilla.png"),                    
-            ***REMOVED***
-        ***REMOVED***;
+            ***REMOVED***;
+        ***REMOVED***);
+
+            tarea.Start();
+
+            return tarea;
     ***REMOVED***
 ***REMOVED***
 ***REMOVED***

@@ -9,7 +9,7 @@
     <ListView.ItemTemplate>
       <DataTemplate>
         <ImageCell
-          ImageSource ="***REMOVED***Binding Image***REMOVED***"
+          ImageSource = "***REMOVED***Binding Image***REMOVED***"
           Text="***REMOVED***Binding Name***REMOVED***"
           Detail="***REMOVED***Binding Detail***REMOVED***"/>
       </DataTemplate>

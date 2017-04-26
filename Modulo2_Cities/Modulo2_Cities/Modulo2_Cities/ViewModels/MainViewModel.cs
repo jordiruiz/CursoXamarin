@@ -1,12 +1,14 @@
 ﻿using Modulo2_Cities.Models;
 using Modulo2_Cities.Services;
+using Modulo2_Cities.ViewModels.Base;
 using Modulo2_Cities.Views;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Modulo2_Cities.ViewModels
 ***REMOVED***
-    public class MainViewModel : BindableObject
+    public class MainViewModel : ViewModelBase
     ***REMOVED***
         public ObservableCollection<City> _cities;
         private City _selectedItem;
@@ -14,14 +16,12 @@ namespace Modulo2_Cities.ViewModels
 
         public MainViewModel()
         ***REMOVED***
-            _cityService = App.Container.GetService(typeof(IRepoService<City>)) as IRepoService<City>;
-
-            Cities = _cityService.GetAll();
+            _cityService = App.Container.GetService(typeof(IRepoService<City>)) as IRepoService<City>;            
     ***REMOVED***
         
         public ObservableCollection<City> Cities
         ***REMOVED***
-            get ***REMOVED*** return _cities; ***REMOVED***
+            get ***REMOVED*** return _cities;***REMOVED***
             set
             ***REMOVED***
                 _cities = value;
@@ -37,6 +37,18 @@ namespace Modulo2_Cities.ViewModels
                 _selectedItem = value;
 
                 NavigationService.Instance.NavigateTo<CityDetailViewModel>(_selectedItem);
+        ***REMOVED***
+    ***REMOVED***
+
+        public override async void OnAppearing(object navigationContext)
+        ***REMOVED***
+            base.OnAppearing(navigationContext);
+
+            var result = await _cityService.GetAll();
+
+            if (result != null)
+            ***REMOVED***
+                Cities = new ObservableCollection<City>(result);
         ***REMOVED***
     ***REMOVED***
 ***REMOVED***

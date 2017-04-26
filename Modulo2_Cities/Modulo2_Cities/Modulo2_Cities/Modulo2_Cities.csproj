@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Infrastructure\GlobalSettings.cs" />
     <Compile Include="Infrastructure\IOCModule.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -44,9 +45,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CitiesDetail.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\CityMobileService.cs" />
     <Compile Include="Services\CityService.cs" />
     <Compile Include="Services\IRepoService.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="ViewModels\Base\ViewModelBase.cs" />
     <Compile Include="ViewModels\CityDetailViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\CityDetailView.xaml.cs">
