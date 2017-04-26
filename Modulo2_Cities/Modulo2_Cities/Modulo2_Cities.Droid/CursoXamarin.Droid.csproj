@@ -9,15 +9,15 @@
     <ProjectTypeGuids>***REMOVED***EFBA0AD7-5A72-4C68-AF49-83D382785DCF***REMOVED***;***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Modulo2_Cities.Droid</RootNamespace>
-    <AssemblyName>Modulo2_Cities.Droid</AssemblyName>
+    <RootNamespace>CursoXamarin.Droid</RootNamespace>
+    <AssemblyName>CursoXamarin.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -159,9 +159,9 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modulo2_Cities\Modulo2_Cities.csproj">
+    <ProjectReference Include="..\Modulo2_Cities\CursoXamarin.csproj">
       <Project>***REMOVED***70d854bf-dfb9-41d6-aad5-e977bfb64f6e***REMOVED***</Project>
-      <Name>Modulo2_Cities</Name>
+      <Name>CursoXamarin</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

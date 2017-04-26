@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="7a29bf8e-bfb0-48e6-8a04-169ceb42b6b0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Modulo2_Cities.UWP</DisplayName>
+    <DisplayName>CursoXamarin.UWP</DisplayName>
     <PublisherDisplayName>Paraguay</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="Modulo2_Cities.UWP.App">
+      EntryPoint="CursoXamarin.UWP.App">
       <uap:VisualElements
-        DisplayName="Modulo2_Cities.UWP"
+        DisplayName="CursoXamarin.UWP"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Modulo2_Cities.UWP"
+        Description="CursoXamarin.UWP"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

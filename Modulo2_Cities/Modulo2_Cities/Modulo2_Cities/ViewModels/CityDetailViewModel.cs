@@ -1,8 +1,8 @@
-﻿using Modulo2_Cities.Models;
+﻿using CursoXamarin.Models;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
-namespace Modulo2_Cities.ViewModels
+namespace CursoXamarin.ViewModels
 ***REMOVED***
     public class CityDetailViewModel : BindableObject
     ***REMOVED***

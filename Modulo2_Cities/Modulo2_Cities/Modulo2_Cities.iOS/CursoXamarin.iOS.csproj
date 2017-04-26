@@ -8,9 +8,9 @@
     <ProjectGuid>***REMOVED***0FCD52E6-219B-4685-9941-AF3E01F7FF82***REMOVED***</ProjectGuid>
     <ProjectTypeGuids>***REMOVED***FEACFBD2-3405-455C-9665-78FE426C6842***REMOVED***;***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Modulo2_Cities.iOS</RootNamespace>
+    <RootNamespace>CursoXamarin.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Modulo2_Cities.iOS</AssemblyName>
+    <AssemblyName>CursoXamarin.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -164,9 +164,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modulo2_Cities\Modulo2_Cities.csproj">
+    <ProjectReference Include="..\Modulo2_Cities\CursoXamarin.csproj">
       <Project>***REMOVED***70d854bf-dfb9-41d6-aad5-e977bfb64f6e***REMOVED***</Project>
-      <Name>Modulo2_Cities</Name>
+      <Name>CursoXamarin</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

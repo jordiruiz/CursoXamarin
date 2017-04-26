@@ -1,12 +1,12 @@
-﻿using Modulo2_Cities.Models;
-using Modulo2_Cities.Resources.Texts;
+﻿using CursoXamarin.Models;
+using CursoXamarin.Resources.Texts;
 using Ninject;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Modulo2_Cities.Services
+namespace CursoXamarin.Services
 ***REMOVED***
     public class CityService : IRepoService<City>
     ***REMOVED***
@@ -34,37 +34,37 @@ namespace Modulo2_Cities.Services
                     ***REMOVED***
                         Name = "New York",
                         Detail = CitiesDetail.NewYok,
-                        Image = "Modulo2_Cities.Resources.Images.NewYork.png",
+                        Image = "CursoXamarin.Resources.Images.NewYork.png",
                 ***REMOVED***,
                     new City
                     ***REMOVED***
                         Name = "Paris",
                         Detail = CitiesDetail.Paris,
-                        Image = "Modulo2_Cities.Resources.Images.Paris.png",
+                        Image = "CursoXamarin.Resources.Images.Paris.png",
                 ***REMOVED***,
                     new City
                     ***REMOVED***
                         Name = "Roma",
                         Detail = CitiesDetail.Roma,
-                        Image = "Modulo2_Cities.Resources.Images.Roma.png",
+                        Image = "CursoXamarin.Resources.Images.Roma.png",
                 ***REMOVED***,
                     new City
                     ***REMOVED***
                         Name = "San Francisco",
                         Detail = CitiesDetail.SanFrancisco,
-                        Image = "Modulo2_Cities.Resources.Images.SanFrancisco.png",
+                        Image = "CursoXamarin.Resources.Images.SanFrancisco.png",
                 ***REMOVED***,
                     new City
                     ***REMOVED***
                         Name = "Seattle",
                         Detail = CitiesDetail.Seattle,
-                        Image = "Modulo2_Cities.Resources.Images.Seattle.png",
+                        Image = "CursoXamarin.Resources.Images.Seattle.png",
                 ***REMOVED***,
                     new City
                     ***REMOVED***
                         Name = "Sevilla",
                         Detail = CitiesDetail.Sevilla,
-                        Image = "Modulo2_Cities.Resources.Images.Sevilla.png",
+                        Image = "CursoXamarin.Resources.Images.Sevilla.png",
                 ***REMOVED***
             ***REMOVED***;
         ***REMOVED***);

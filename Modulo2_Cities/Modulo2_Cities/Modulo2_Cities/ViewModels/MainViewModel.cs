@@ -1,12 +1,12 @@
-﻿using Modulo2_Cities.Models;
-using Modulo2_Cities.Services;
-using Modulo2_Cities.ViewModels.Base;
-using Modulo2_Cities.Views;
+﻿using CursoXamarin.Models;
+using CursoXamarin.Services;
+using CursoXamarin.ViewModels.Base;
+using CursoXamarin.Views;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Modulo2_Cities.ViewModels
+namespace CursoXamarin.ViewModels
 ***REMOVED***
     public class MainViewModel : ViewModelBase
     ***REMOVED***

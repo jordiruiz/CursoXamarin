@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "Modulo2_Cities", "Modulo2_Cities\Modulo2_Cities\Modulo2_Cities.csproj", "***REMOVED***70D854BF-DFB9-41D6-AAD5-E977BFB64F6E***REMOVED***"
+Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "CursoXamarin", "Modulo2_Cities\Modulo2_Cities\CursoXamarin.csproj", "***REMOVED***70D854BF-DFB9-41D6-AAD5-E977BFB64F6E***REMOVED***"
 EndProject
-Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "Modulo2_Cities.Droid", "Modulo2_Cities\Modulo2_Cities.Droid\Modulo2_Cities.Droid.csproj", "***REMOVED***A7D0F75E-9CF1-4CC2-81E4-7588DCF1968C***REMOVED***"
+Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "CursoXamarin.Droid", "Modulo2_Cities\Modulo2_Cities.Droid\CursoXamarin.Droid.csproj", "***REMOVED***A7D0F75E-9CF1-4CC2-81E4-7588DCF1968C***REMOVED***"
 EndProject
-Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "Modulo2_Cities.iOS", "Modulo2_Cities\Modulo2_Cities.iOS\Modulo2_Cities.iOS.csproj", "***REMOVED***0FCD52E6-219B-4685-9941-AF3E01F7FF82***REMOVED***"
+Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "CursoXamarin.iOS", "Modulo2_Cities\Modulo2_Cities.iOS\CursoXamarin.iOS.csproj", "***REMOVED***0FCD52E6-219B-4685-9941-AF3E01F7FF82***REMOVED***"
 EndProject
-Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "Modulo2_Cities.UWP", "Modulo2_Cities\Modulo2_Cities.UWP\Modulo2_Cities.UWP.csproj", "***REMOVED***422CCD8C-8A3A-47E3-B272-B0E84C2D9067***REMOVED***"
+Project("***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***") = "CursoXamarin.UWP", "Modulo2_Cities\Modulo2_Cities.UWP\CursoXamarin.UWP.csproj", "***REMOVED***422CCD8C-8A3A-47E3-B272-B0E84C2D9067***REMOVED***"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
