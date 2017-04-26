@@ -1,16 +1,30 @@
 ﻿using CursoXamarin.Models;
-using System.Collections.ObjectModel;
-using Xamarin.Forms;
+using CursoXamarin.ViewModels.Base;
 
 namespace CursoXamarin.ViewModels
 ***REMOVED***
-    public class CityDetailViewModel : BindableObject
+    public class CityDetailViewModel : ViewModelBase
     ***REMOVED***
-        public City City ***REMOVED*** get; set; ***REMOVED***
+        private City _city;
 
-        public CityDetailViewModel(City city)
+        public City City
         ***REMOVED***
-            City = city;
+            get ***REMOVED*** return _city; ***REMOVED***
+            set
+            ***REMOVED***
+                _city = value;
+                OnPropertyChanged("City");
+        ***REMOVED***
+    ***REMOVED***
+
+        public override void OnAppearing(object navigationContext)
+        ***REMOVED***
+            base.OnAppearing(navigationContext);
+
+            if (navigationContext is City)
+            ***REMOVED***
+                City = (City)navigationContext;
+        ***REMOVED***
     ***REMOVED***
 ***REMOVED***
 ***REMOVED***

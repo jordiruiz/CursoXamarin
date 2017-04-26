@@ -1,16 +1,27 @@
-﻿using CursoXamarin.Models;
-using CursoXamarin.ViewModels;
-using System.Collections.ObjectModel;
+﻿using CursoXamarin.ViewModels;
 using Xamarin.Forms;
 
 namespace CursoXamarin.Views
 ***REMOVED***
     public partial class CityDetailView : ContentPage
     ***REMOVED***
-        public CityDetailView(City city)
+        public CityDetailView(object parameter)
         ***REMOVED***
             InitializeComponent();
-            BindingContext = new CityDetailViewModel(city);
+
+            Parameter = parameter;
+
+            BindingContext = new CityDetailViewModel();
+    ***REMOVED***
+
+        public object Parameter ***REMOVED*** get; set; ***REMOVED***
+
+        protected override void OnAppearing()
+        ***REMOVED***
+            base.OnAppearing();
+
+            var viewModel = BindingContext as CityDetailViewModel;
+            if (viewModel != null) viewModel.OnAppearing(Parameter);
     ***REMOVED***
 ***REMOVED***
 ***REMOVED***

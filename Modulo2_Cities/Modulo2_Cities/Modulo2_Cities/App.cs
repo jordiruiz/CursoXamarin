@@ -18,7 +18,6 @@ namespace CursoXamarin
             MainPage = new NavigationPage(new MainView(null));            
     ***REMOVED***
         
-
         protected override void OnStart()
         ***REMOVED***
             // Handle when your app starts            

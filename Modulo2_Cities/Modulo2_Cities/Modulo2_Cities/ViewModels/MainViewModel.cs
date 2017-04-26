@@ -1,10 +1,7 @@
 ﻿using CursoXamarin.Models;
 using CursoXamarin.Services;
 using CursoXamarin.ViewModels.Base;
-using CursoXamarin.Views;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace CursoXamarin.ViewModels
 ***REMOVED***
