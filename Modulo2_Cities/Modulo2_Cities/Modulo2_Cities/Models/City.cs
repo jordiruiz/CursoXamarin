@@ -1,11 +1,10 @@
-﻿using Xamarin.Forms;
-
-namespace Modulo2_Cities.Models
+﻿namespace CursoXamarin.Models
 {
     public class City
     {
+        public string Id { get; set; }
         public string Name { get; set; }
-        public ImageSource Image { get; set; }
+        public object Image { get; set; }
         public string Detail { get; set; }        
     }    
 }

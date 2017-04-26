@@ -1,16 +1,30 @@
-﻿using Modulo2_Cities.Models;
-using System.Collections.ObjectModel;
-using Xamarin.Forms;
+﻿using CursoXamarin.Models;
+using CursoXamarin.ViewModels.Base;
 
-namespace Modulo2_Cities.ViewModels
+namespace CursoXamarin.ViewModels
 {
-    public class CityDetailViewModel : BindableObject
+    public class CityDetailViewModel : ViewModelBase
     {
-        public City City { get; set; }
+        private City _city;
 
-        public CityDetailViewModel(City city)
+        public City City
         {
-            City = city;
+            get { return _city; }
+            set
+            {
+                _city = value;
+                OnPropertyChanged("City");
+            }
+        }
+
+        public override void OnAppearing(object navigationContext)
+        {
+            base.OnAppearing(navigationContext);
+
+            if (navigationContext is City)
+            {
+                City = (City)navigationContext;
+            }
         }
     }
 }

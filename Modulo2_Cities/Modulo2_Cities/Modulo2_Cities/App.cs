@@ -1,19 +1,26 @@
-﻿using Modulo2_Cities.Views;
-
+﻿using CursoXamarin.Infrastructure;
+using CursoXamarin.Views;
+using Ninject;
 using Xamarin.Forms;
 
-namespace Modulo2_Cities
+namespace CursoXamarin
 {
     public class App : Application
     {
+        public static IKernel Container { get; set; }
+
         public App()
         {
-            MainPage = new NavigationPage(new MainView());            
-        }
+            var kernel = new StandardKernel(new IOCModule());
 
+            Container = kernel;
+
+            MainPage = new NavigationPage(new MainView(null));            
+        }
+        
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // Handle when your app starts            
         }
 
         protected override void OnSleep()

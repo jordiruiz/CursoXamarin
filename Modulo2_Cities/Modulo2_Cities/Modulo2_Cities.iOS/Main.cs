@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Modulo2_Cities.iOS
+namespace CursoXamarin.iOS
 {
     public class Application
     {

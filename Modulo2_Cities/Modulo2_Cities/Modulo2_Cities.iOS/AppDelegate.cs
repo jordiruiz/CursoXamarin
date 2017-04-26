@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Modulo2_Cities.iOS
+namespace CursoXamarin.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
@@ -22,6 +22,8 @@ namespace Modulo2_Cities.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
