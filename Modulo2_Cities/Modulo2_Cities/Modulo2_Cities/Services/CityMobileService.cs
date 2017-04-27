@@ -4,11 +4,13 @@ using CursoXamarin.Models;
 using Ninject;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
 
 namespace CursoXamarin.Services
 ***REMOVED***
     public class CityMobileService : IRepoService<City>
     ***REMOVED***
+        private IMobileServiceTable<City> _cityTable;
         MobileServiceClient mobileService;
 
         private static CityMobileService _instance;
@@ -25,22 +27,35 @@ namespace CursoXamarin.Services
             return _instance;
     ***REMOVED***
 
+        public CityMobileService()
+        ***REMOVED***
+            if (mobileService != null)
+                return;
+
+            mobileService = new MobileServiceClient(GlobalSettings.CityMobileServiceEndpoint);
+            _cityTable = mobileService.GetTable<City>();
+    ***REMOVED***
+
         public Task<IEnumerable<City>> GetAll()
         ***REMOVED***
-            try
-            ***REMOVED***
-                mobileService = new MobileServiceClient(GlobalSettings.CityMobileServiceEndpoint);
+            return _cityTable.ReadAsync();            
+    ***REMOVED***
 
-                var table = mobileService.GetTable<City>();
-
-                var items = table.ReadAsync();
-
-                return items;
+        public async Task AddOrUpdateCityAsync(City Item)
         ***REMOVED***
-            catch (System.Exception ex)
+            if (string.IsNullOrEmpty(Item.Id))
             ***REMOVED***
-                throw;
+                await _cityTable.InsertAsync(Item);
         ***REMOVED***
+            else
+            ***REMOVED***
+                await _cityTable.UpdateAsync(Item);
+        ***REMOVED***
+    ***REMOVED***
+
+        public async Task DeleteCityItemAsync(City Item)
+        ***REMOVED***
+            await _cityTable.DeleteAsync(Item);
     ***REMOVED***
 ***REMOVED***
 ***REMOVED***
