@@ -6,9 +6,9 @@ using Microsoft.Azure.Mobile.Server.Tables;
 using Modulo3_Backend.DataObjects;
 
 namespace Modulo3_Backend.Models
-***REMOVED***
+{
     public class MobileServiceContext : DbContext
-    ***REMOVED***
+    {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
         // If you want Entity Framework to alter your database
@@ -23,16 +23,16 @@ namespace Modulo3_Backend.Models
         private const string connectionStringName = "Name=MS_TableConnectionString";
 
         public MobileServiceContext() : base(connectionStringName)
-        ***REMOVED***
-    ***REMOVED***
+        {
+        }
 
-        public DbSet<City> Cities ***REMOVED*** get; set; ***REMOVED***
+        public DbSet<City> Cities { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        ***REMOVED***
+        {
             modelBuilder.Conventions.Add(
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        }
+    }
+}

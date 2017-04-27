@@ -14,14 +14,14 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 namespace CursoXamarin.UWP
-***REMOVED***
+{
     public sealed partial class MainPage
-    ***REMOVED***
+    {
         public MainPage()
-        ***REMOVED***
+        {
             this.InitializeComponent();
 
             LoadApplication(new CursoXamarin.App());
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        }
+    }
+}

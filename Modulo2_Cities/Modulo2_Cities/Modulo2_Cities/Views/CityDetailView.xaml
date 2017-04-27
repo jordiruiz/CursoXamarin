@@ -2,18 +2,48 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CursoXamarin.Views.CityDetailView"
-             Title="***REMOVED***Binding City.Name***REMOVED***">
-  <StackLayout>
-    <Image 
-      Aspect="AspectFill"
-      Source="***REMOVED***Binding City.Image***REMOVED***"
-      />
-    <Label 
-      Text="***REMOVED***Binding City.Name***REMOVED***" 
-      FontSize="Large"
-    />
-    <Label 
-      Text="***REMOVED***Binding City.Detail***REMOVED***" 
-    />    
-  </StackLayout>  
+             Title="{Binding City.Name}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ScrollView
+            Grid.Row="0">
+            <StackLayout>
+                <Image
+                    Source="{Binding City.Image}"
+                    Aspect="AspectFill"/>
+                <Grid
+                    Margin="12, 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label     
+                        Grid.Row="0"
+                        Text="{Binding City.Name}"
+                        FontSize="Large"/>
+                    <Label     
+                        Grid.Row="1"
+                        Text="{Binding City.Image}"
+                        FontSize="Medium"/>
+                    <Label 
+                        Grid.Row="2"
+                        Text="{Binding City.Detail}"
+                        FontSize="Medium"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        <Button 
+            Grid.Row="1"
+            Text="Edit"
+            Command="{Binding EditCommand}"/>
+        <Button 
+            Grid.Row="2"
+            Text="Delete"
+            Command="{Binding DeleteCommand}"/>
+    </Grid>
 </ContentPage>

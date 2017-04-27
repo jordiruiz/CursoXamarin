@@ -5,14 +5,14 @@ These files will be deployed with you package and will be accessible using Andro
 AssetManager, like this:
 
 public class ReadAsset : Activity
-***REMOVED***
+{
 	protected override void OnCreate (Bundle bundle)
-	***REMOVED***
+	{
 		base.OnCreate (bundle);
 
 		InputStream input = Assets.Open ("my_asset.txt");
-	***REMOVED***
-***REMOVED***
+	}
+}
 
 Additionally, some Android functions will automatically load asset files:
 

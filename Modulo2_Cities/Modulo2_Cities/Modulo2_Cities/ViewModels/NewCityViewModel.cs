@@ -1,47 +1,57 @@
 ﻿using CursoXamarin.Models;
 using CursoXamarin.Services;
 using CursoXamarin.ViewModels.Base;
+using Plugin.Connectivity;
 using Plugin.Media.Abstractions;
+using System.IO;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace CursoXamarin.ViewModels
-***REMOVED***
+{
     public class NewCityViewModel : ViewModelBase
-    ***REMOVED***
+    {
+        private string _id;
         private string _name;
         private string _detail;
         private MediaFile _image;
-
-        public MediaFile Image
-        ***REMOVED***
-            get ***REMOVED*** return _image; ***REMOVED***
-            set
-            ***REMOVED***
-                _image = value;
-                OnPropertyChanged("ImageUrl");
-        ***REMOVED***
-    ***REMOVED***
+        private string _imageUrl;
+        
+        public string Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
 
         public string Name
-        ***REMOVED***
-            get ***REMOVED*** return _name; ***REMOVED***
+        {
+            get { return _name; }
             set
-            ***REMOVED***
+            {
                 _name = value;
                 OnPropertyChanged("Name");
-        ***REMOVED***
-    ***REMOVED***
+            }
+        }
+
+        public MediaFile Image
+        {
+            get { return _image; }
+            set
+            {
+                _image = value;
+                OnPropertyChanged("Image");
+            }
+        }
 
         public string Detail
-        ***REMOVED***
-            get ***REMOVED*** return _detail; ***REMOVED***
+        {
+            get { return _detail; }
             set
-            ***REMOVED***
+            {
                 _detail = value;
                 OnPropertyChanged("Detail");
-        ***REMOVED***
-    ***REMOVED***
+            }
+        }
 
         public ICommand CameraCommand => new Command(CameraAsync);
 
@@ -49,37 +59,70 @@ namespace CursoXamarin.ViewModels
 
         public ICommand CancelCommand => new Command(Cancel);
 
+        public override void OnAppearing(object navigationContext)
+        {
+            if (navigationContext is City)
+            {
+                var city = (City)navigationContext;
+
+                Id = city.Id;
+                _imageUrl = city.Image;
+                Name = city.Name;
+                Detail = city.Detail;
+            }
+
+            base.OnAppearing(navigationContext);
+        }
+
         private async void CameraAsync()
-        ***REMOVED***
+        {
             var result = await PhotoService.GetInstance().PickPhotoAsync();
 
             if (result != null)
-            ***REMOVED***
+            {
                 _image = result;                
-        ***REMOVED***
-    ***REMOVED***
+            }
+        }
 
         private async void SaveAsync()
-        ***REMOVED***
-            var ImageUrl = await BlobService.GetInstance().UploadPhotoAsync(Image);
-
+        {
             var city = new City
-            ***REMOVED***
+            {
+                Id = Id,
                 Name = Name,
-                Image = ImageUrl,
-                Detail = Detail
-        ***REMOVED***;
+                Detail = Detail,                
+            };
+
+            if (Image != null)
+            {
+                if (!CrossConnectivity.Current.IsConnected)
+                {
+                    _imageUrl = Image.Path;
+
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        Image.GetStream().CopyTo(ms);
+                        city.OfflineImage = ms.ToArray();
+                    }
+                }
+                else
+                {
+                    _imageUrl = await BlobService.GetInstance().UploadPhotoAsync(Image);
+                }
+            }
+
+            city.Image = _imageUrl;
 
             var _cityService = App.Container.GetService(typeof(IRepoService<City>)) as IRepoService<City>;
 
             await _cityService.AddOrUpdateCityAsync(city);
 
             NavigationService.Instance.NavigateBack();
-    ***REMOVED***
+        }
 
         private void Cancel()
-        ***REMOVED***
+        {
             NavigationService.Instance.NavigateBack();
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        }
+    }
+}
