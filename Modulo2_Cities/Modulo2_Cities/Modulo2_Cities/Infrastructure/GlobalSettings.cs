@@ -2,8 +2,8 @@
 ***REMOVED***
 ***REMOVED***
     ***REMOVED***
-        public const string CityMobileServiceEndpoint = "URL AQUI";
-        public const string BlobSharedKey = "CLAVE AQUI";
+        public const string CityMobileServiceEndpoint = "***REMOVED***";
+        public const string BlobSharedKey = "***REMOVED***";
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***

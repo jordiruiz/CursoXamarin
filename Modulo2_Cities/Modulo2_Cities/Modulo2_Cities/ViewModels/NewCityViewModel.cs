@@ -1,7 +1,9 @@
 ﻿using CursoXamarin.Models;
 using CursoXamarin.Services;
 using CursoXamarin.ViewModels.Base;
+using Plugin.Connectivity;
 using Plugin.Media.Abstractions;
+using System.IO;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -9,18 +11,16 @@ namespace CursoXamarin.ViewModels
 ***REMOVED***
     public class NewCityViewModel : ViewModelBase
     ***REMOVED***
+        private string _id;
         private string _name;
         private string _detail;
         private MediaFile _image;
-
-        public MediaFile Image
+        private string _imageUrl;
+        
+        public string Id
         ***REMOVED***
-            get ***REMOVED*** return _image; ***REMOVED***
-            set
-            ***REMOVED***
-                _image = value;
-                OnPropertyChanged("ImageUrl");
-        ***REMOVED***
+            get ***REMOVED*** return _id; ***REMOVED***
+            set ***REMOVED*** _id = value; ***REMOVED***
     ***REMOVED***
 
         public string Name
@@ -30,6 +30,16 @@ namespace CursoXamarin.ViewModels
             ***REMOVED***
                 _name = value;
                 OnPropertyChanged("Name");
+        ***REMOVED***
+    ***REMOVED***
+
+        public MediaFile Image
+        ***REMOVED***
+            get ***REMOVED*** return _image; ***REMOVED***
+            set
+            ***REMOVED***
+                _image = value;
+                OnPropertyChanged("Image");
         ***REMOVED***
     ***REMOVED***
 
@@ -49,6 +59,21 @@ namespace CursoXamarin.ViewModels
 
         public ICommand CancelCommand => new Command(Cancel);
 
+        public override void OnAppearing(object navigationContext)
+        ***REMOVED***
+            if (navigationContext is City)
+            ***REMOVED***
+                var city = (City)navigationContext;
+
+                Id = city.Id;
+                _imageUrl = city.Image;
+                Name = city.Name;
+                Detail = city.Detail;
+        ***REMOVED***
+
+            base.OnAppearing(navigationContext);
+    ***REMOVED***
+
         private async void CameraAsync()
         ***REMOVED***
             var result = await PhotoService.GetInstance().PickPhotoAsync();
@@ -61,14 +86,32 @@ namespace CursoXamarin.ViewModels
 
         private async void SaveAsync()
         ***REMOVED***
-            var ImageUrl = await BlobService.GetInstance().UploadPhotoAsync(Image);
-
             var city = new City
             ***REMOVED***
+                Id = Id,
                 Name = Name,
-                Image = ImageUrl,
-                Detail = Detail
+                Detail = Detail,                
         ***REMOVED***;
+
+            if (Image != null)
+            ***REMOVED***
+                if (!CrossConnectivity.Current.IsConnected)
+                ***REMOVED***
+                    _imageUrl = Image.Path;
+
+                    using (MemoryStream ms = new MemoryStream())
+                    ***REMOVED***
+                        Image.GetStream().CopyTo(ms);
+                        city.OfflineImage = ms.ToArray();
+                ***REMOVED***
+            ***REMOVED***
+                else
+                ***REMOVED***
+                    _imageUrl = await BlobService.GetInstance().UploadPhotoAsync(Image);
+            ***REMOVED***
+        ***REMOVED***
+
+            city.Image = _imageUrl;
 
             var _cityService = App.Container.GetService(typeof(IRepoService<City>)) as IRepoService<City>;
 

@@ -97,7 +97,7 @@ namespace CursoXamarin.Services
             return tarea;
     ***REMOVED***
 
-        public Task DeleteCityItemAsync(City Item)
+        public Task DeleteCityAsync(City Item)
         ***REMOVED***
             var tarea = new Task(() =>
             ***REMOVED***

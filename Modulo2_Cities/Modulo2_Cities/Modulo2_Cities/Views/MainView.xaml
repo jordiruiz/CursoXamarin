@@ -8,12 +8,17 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-            <Button Grid.Row="0"
+            <Button 
+                Grid.Row="0"
                 Text="New"
                 Command="***REMOVED***Binding NewCommand***REMOVED***"/>
-            <ListView Grid.Row="1"
+            <ListView 
+                Grid.Row="1"
                 ItemsSource="***REMOVED***Binding Cities***REMOVED***"
-                SelectedItem="***REMOVED***Binding SelectedItem, Mode=TwoWay***REMOVED***">
+                SelectedItem="***REMOVED***Binding SelectedItem, Mode=TwoWay***REMOVED***"
+                IsRefreshing="***REMOVED***Binding IsBusy, Mode=OneWay***REMOVED***"
+                IsPullToRefreshEnabled="True"
+                RefreshCommand="***REMOVED***Binding RefreshCommand***REMOVED***">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ImageCell
