@@ -7,6 +7,6 @@ namespace CursoXamarin.Services
     {
         Task<IEnumerable<T>> GetAll();
         Task AddOrUpdateCityAsync(T Item);
-        Task DeleteCityItemAsync(T Item);
+        Task DeleteCityAsync(T Item);
     }
 }
