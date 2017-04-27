@@ -6,5 +6,7 @@ namespace CursoXamarin.Services
     public interface IRepoService<T> where T:class,new()
     ***REMOVED***
         Task<IEnumerable<T>> GetAll();
+        Task AddOrUpdateCityAsync(T Item);
+        Task DeleteCityItemAsync(T Item);
 ***REMOVED***
 ***REMOVED***

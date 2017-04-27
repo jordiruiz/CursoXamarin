@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CursoXamarin.Views.NewCityView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackLayout
+            Grid.Row="0">
+            <Label 
+                Text="Image"
+                TextColor="Blue"
+                FontSize="Small"/>
+            <Image
+                Source="***REMOVED***Binding Image.Path***REMOVED***"
+                Aspect="AspectFit"/>
+            <Button 
+                Text="Take Picture"
+                Command="***REMOVED***Binding CameraCommand***REMOVED***"/>
+        </StackLayout>
+        <StackLayout
+            Grid.Row="1">
+            <Label 
+                Text="Name"
+                TextColor="Blue"
+                FontSize="Small"/>
+            <Entry 
+                Placeholder="Name"
+                Text="***REMOVED***Binding Name, Mode=TwoWay***REMOVED***"/>
+        </StackLayout>
+        <StackLayout
+            Grid.Row="2">
+            <Label 
+                Text="Description"
+                TextColor="Blue"
+                FontSize="Small"/>
+            <Editor
+                HeightRequest="150"
+                Text="***REMOVED***Binding Detail, Mode=TwoWay***REMOVED***"/>
+        </StackLayout>
+        <StackLayout
+            Grid.Row="3">
+            <Button
+                Text="Save"
+                Command="***REMOVED***Binding SaveCommand***REMOVED***"/>
+            <Button 
+                Text="Cancel"
+                Command="***REMOVED***Binding CancelCommand***REMOVED***"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
