@@ -2,17 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              x:Class="CursoXamarin.Views.MainView"
-             Title="Xamagram"> 
-  <ListView
-    ItemsSource="{Binding Cities}"
-    SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ImageCell
-          ImageSource = "{Binding Image}"
-          Text="{Binding Name}"
-          Detail="{Binding Detail}"/>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>  
+             Title="Xamagram">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+            <Button Grid.Row="0"
+                Text="New"
+                Command="{Binding NewCommand}"/>
+            <ListView Grid.Row="1"
+                ItemsSource="{Binding Cities}"
+                SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell
+                      ImageSource = "{Binding Image}"
+                      Text="{Binding Name}"
+                      Detail="{Binding Detail}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView> 
+    </Grid>
 </ContentPage>

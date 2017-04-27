@@ -3,11 +3,13 @@ using CursoXamarin.Resources.Texts;
 using Ninject;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
 
 namespace CursoXamarin.Services
 {
     public class CityService : IRepoService<City>
     {
+        private static IEnumerable<City> _cities;
         private static CityService _instance;
 
         public static CityService GetInstance(IKernel kernelForInjection)
@@ -16,17 +18,17 @@ namespace CursoXamarin.Services
             {
                 _instance = new CityService();
 
+                seed();
+
                 kernelForInjection.Inject(_instance);
             }
 
             return _instance;
         }
 
-        public Task<IEnumerable<City>> GetAll()
+        private static void seed()
         {
-            var tarea = new Task<IEnumerable<City>>(() =>
-            {
-                return new City[]
+            _cities = new City[]
                 {
                     new City
                     {
@@ -65,6 +67,45 @@ namespace CursoXamarin.Services
                         Image = "CursoXamarin.Resources.Images.Sevilla.png",
                     }
                 };
+        }
+
+        public Task AddOrUpdateCityAsync(City Item)
+        {
+            var tarea = new Task(() =>
+            {
+                var cities = new List<City>(_cities);
+
+                cities.Add(Item);
+
+                _cities = cities.ToArray();
+            });
+
+            tarea.Start();
+
+            return tarea;
+        }
+
+        public Task<IEnumerable<City>> GetAll()
+        {
+            var tarea = new Task<IEnumerable<City>>(() =>
+            {
+                return _cities;
+            });
+
+            tarea.Start();
+
+            return tarea;
+        }
+
+        public Task DeleteCityItemAsync(City Item)
+        {
+            var tarea = new Task(() =>
+            {
+                var cities = new List<City>(_cities);
+
+                cities.Remove(Item);
+
+                _cities = cities.ToArray();
             });
 
             tarea.Start();

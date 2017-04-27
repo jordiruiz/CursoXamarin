@@ -2,6 +2,8 @@
 {
     public static class GlobalSettings
     {
-        public const string CityMobileServiceEndpoint = "https://modulo3backend.azurewebsites.net";
+        public const string CityMobileServiceEndpoint = "URL AQUI";
+        public const string BlobSharedKey = "CLAVE AQUI";
+        public const string BlobContainerName = "images";
     }
 }

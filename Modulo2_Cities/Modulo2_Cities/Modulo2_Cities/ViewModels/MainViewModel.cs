@@ -2,6 +2,8 @@
 using CursoXamarin.Services;
 using CursoXamarin.ViewModels.Base;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace CursoXamarin.ViewModels
 {
@@ -10,6 +12,7 @@ namespace CursoXamarin.ViewModels
         public ObservableCollection<City> _cities;
         private City _selectedItem;
         private IRepoService<City> _cityService;
+        public ICommand NewCommand => new Command(New);
 
         public MainViewModel()
         {
@@ -47,6 +50,11 @@ namespace CursoXamarin.ViewModels
             {
                 Cities = new ObservableCollection<City>(result);
             }
+        }
+
+        private void New()
+        {
+            NavigationService.Instance.NavigateTo<NewCityViewModel>();
         }
     }
 }

@@ -12,7 +12,8 @@ namespace CursoXamarin.Services
         private IDictionary<Type, Type> viewModelRouting = new Dictionary<Type, Type>()
         {
             { typeof(MainViewModel), typeof(MainView) },
-            { typeof(CityDetailViewModel), typeof(CityDetailView) }
+            { typeof(CityDetailViewModel), typeof(CityDetailView) },
+            { typeof(NewCityViewModel), typeof(NewCityView) }
         };
 
         public static NavigationService Instance
@@ -35,6 +36,11 @@ namespace CursoXamarin.Services
 
             if (page != null)
                 Application.Current.MainPage.Navigation.PushAsync(page);
+        }
+
+        public void NavigateBack()
+        {
+            Application.Current.MainPage.Navigation.PopAsync();
         }
     }
 }

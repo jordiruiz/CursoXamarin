@@ -4,11 +4,13 @@ using CursoXamarin.Models;
 using Ninject;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
 
 namespace CursoXamarin.Services
 {
     public class CityMobileService : IRepoService<City>
     {
+        private IMobileServiceTable<City> _cityTable;
         MobileServiceClient mobileService;
 
         private static CityMobileService _instance;
@@ -25,22 +27,35 @@ namespace CursoXamarin.Services
             return _instance;
         }
 
+        public CityMobileService()
+        {
+            if (mobileService != null)
+                return;
+
+            mobileService = new MobileServiceClient(GlobalSettings.CityMobileServiceEndpoint);
+            _cityTable = mobileService.GetTable<City>();
+        }
+
         public Task<IEnumerable<City>> GetAll()
         {
-            try
+            return _cityTable.ReadAsync();            
+        }
+
+        public async Task AddOrUpdateCityAsync(City Item)
+        {
+            if (string.IsNullOrEmpty(Item.Id))
             {
-                mobileService = new MobileServiceClient(GlobalSettings.CityMobileServiceEndpoint);
-
-                var table = mobileService.GetTable<City>();
-
-                var items = table.ReadAsync();
-
-                return items;
+                await _cityTable.InsertAsync(Item);
             }
-            catch (System.Exception ex)
+            else
             {
-                throw;
+                await _cityTable.UpdateAsync(Item);
             }
+        }
+
+        public async Task DeleteCityItemAsync(City Item)
+        {
+            await _cityTable.DeleteAsync(Item);
         }
     }
 }
