@@ -1,2 +1,2 @@
-# Modulo2_Cities
-Retor 2 del Modulo 2 del curso de xamarin
+# Curso Xamarin
+https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-m%C3%B3viles-nativas-multiplataforma-con-C-y-Xamarin_160.aspx

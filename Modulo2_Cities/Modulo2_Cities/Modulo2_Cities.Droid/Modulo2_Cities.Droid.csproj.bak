@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>***REMOVED***A7D0F75E-9CF1-4CC2-81E4-7588DCF1968C***REMOVED***</ProjectGuid>
-    <ProjectTypeGuids>***REMOVED***EFBA0AD7-5A72-4C68-AF49-83D382785DCF***REMOVED***;***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***</ProjectTypeGuids>
+    <ProjectGuid>{A7D0F75E-9CF1-4CC2-81E4-7588DCF1968C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Modulo2_Cities.Droid</RootNamespace>
@@ -134,7 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modulo2_Cities\Modulo2_Cities.csproj">
-      <Project>***REMOVED***70d854bf-dfb9-41d6-aad5-e977bfb64f6e***REMOVED***</Project>
+      <Project>{70d854bf-dfb9-41d6-aad5-e977bfb64f6e}</Project>
       <Name>Modulo2_Cities</Name>
     </ProjectReference>
   </ItemGroup>
@@ -142,7 +142,7 @@
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es ***REMOVED***0***REMOVED***.</ErrorText>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets'))" />
     <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
