@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CursoXamarin.Views.CityDetailView"
-             Title="***REMOVED***Binding City.Name***REMOVED***">
+             Title="{Binding City.Name}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -13,7 +13,7 @@
             Grid.Row="0">
             <StackLayout>
                 <Image
-                    Source="***REMOVED***Binding City.Image***REMOVED***"
+                    Source="{Binding City.Image}"
                     Aspect="AspectFill"/>
                 <Grid
                     Margin="12, 0">
@@ -24,15 +24,15 @@
                     </Grid.RowDefinitions>
                     <Label     
                         Grid.Row="0"
-                        Text="***REMOVED***Binding City.Name***REMOVED***"
+                        Text="{Binding City.Name}"
                         FontSize="Large"/>
                     <Label     
                         Grid.Row="1"
-                        Text="***REMOVED***Binding City.Image***REMOVED***"
+                        Text="{Binding City.Image}"
                         FontSize="Medium"/>
                     <Label 
                         Grid.Row="2"
-                        Text="***REMOVED***Binding City.Detail***REMOVED***"
+                        Text="{Binding City.Detail}"
                         FontSize="Medium"/>
                 </Grid>
             </StackLayout>
@@ -40,10 +40,10 @@
         <Button 
             Grid.Row="1"
             Text="Edit"
-            Command="***REMOVED***Binding EditCommand***REMOVED***"/>
+            Command="{Binding EditCommand}"/>
         <Button 
             Grid.Row="2"
             Text="Delete"
-            Command="***REMOVED***Binding DeleteCommand***REMOVED***"/>
+            Command="{Binding DeleteCommand}"/>
     </Grid>
 </ContentPage>

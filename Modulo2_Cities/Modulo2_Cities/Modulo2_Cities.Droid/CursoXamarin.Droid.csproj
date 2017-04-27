@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>***REMOVED***A7D0F75E-9CF1-4CC2-81E4-7588DCF1968C***REMOVED***</ProjectGuid>
-    <ProjectTypeGuids>***REMOVED***EFBA0AD7-5A72-4C68-AF49-83D382785DCF***REMOVED***;***REMOVED***FAE04EC0-301F-11D3-BF4B-00C04F79EFBC***REMOVED***</ProjectTypeGuids>
+    <ProjectGuid>{A7D0F75E-9CF1-4CC2-81E4-7588DCF1968C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CursoXamarin.Droid</RootNamespace>
@@ -226,7 +226,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modulo2_Cities\CursoXamarin.csproj">
-      <Project>***REMOVED***70d854bf-dfb9-41d6-aad5-e977bfb64f6e***REMOVED***</Project>
+      <Project>{70d854bf-dfb9-41d6-aad5-e977bfb64f6e}</Project>
       <Name>CursoXamarin</Name>
     </ProjectReference>
   </ItemGroup>
@@ -234,7 +234,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es ***REMOVED***0***REMOVED***.</ErrorText>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
     <Error Condition="!Exists('..\..\packages\Xamarin.Android.Support.Annotations.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.Annotations.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Android.Support.Annotations.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.Annotations.targets'))" />

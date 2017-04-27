@@ -30,20 +30,20 @@ the build system will package the resources for distribution and generate a clas
 "Resource" that contains the tokens for each one of the resources included. For example, 
 for the above Resources layout, this is what the Resource class would expose:
 
-public class Resource ***REMOVED***
-    public class drawable ***REMOVED***
+public class Resource {
+    public class drawable {
         public const int icon = 0x123;
-***REMOVED***
+    }
 
-    public class layout ***REMOVED***
+    public class layout {
         public const int main = 0x456;
-***REMOVED***
+    }
 
-    public class strings ***REMOVED***
+    public class strings {
         public const int first_string = 0xabc;
         public const int second_string = 0xbcd;
-***REMOVED***
-***REMOVED***
+    }
+}
 
 You would then use R.drawable.icon to reference the drawable/icon.png file, or Resource.layout.main 
 to reference the layout/main.xml file, or Resource.strings.first_string to reference the first 

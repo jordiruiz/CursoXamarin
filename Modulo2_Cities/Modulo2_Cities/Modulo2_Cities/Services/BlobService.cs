@@ -9,25 +9,25 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CursoXamarin.Services
-***REMOVED***
+{
     public class BlobService
-    ***REMOVED***
+    {
         private static BlobService _instance;
 
         public static BlobService GetInstance()
-        ***REMOVED***
+        {
             if (_instance == null)
-            ***REMOVED***
+            {
                 _instance = new BlobService();                
-        ***REMOVED***
+            }
 
             return _instance;
-    ***REMOVED***
+        }
 
         public async Task<string> UploadPhotoAsync(MediaFile photo)
-        ***REMOVED***
+        {
             try
-            ***REMOVED***
+            {
                 // Conectar con la cuenta Azure Storage.
                 // NOTA: Se deben utilizar tokens SAS en lugar de Shared Keys en aplicaciones en producción.
                 var storageAccount = CloudStorageAccount.Parse(GlobalSettings.BlobSharedKey);
@@ -43,19 +43,19 @@ namespace CursoXamarin.Services
                 await blob.UploadFromStreamAsync(photo.GetStream());
 
                 return blob.Uri.ToString();
-        ***REMOVED***
+            }
             catch (Exception ex)
-            ***REMOVED***
+            {
 
                 throw;
-        ***REMOVED***
+            }
             
-    ***REMOVED***
+        }
 
         public async Task<string> UploadPhotoAsync(byte[] photo)
-        ***REMOVED***
+        {
             try
-            ***REMOVED***
+            {
                 // Conectar con la cuenta Azure Storage.
                 // NOTA: Se deben utilizar tokens SAS en lugar de Shared Keys en aplicaciones en producción.
                 var storageAccount = CloudStorageAccount.Parse(GlobalSettings.BlobSharedKey);
@@ -71,13 +71,13 @@ namespace CursoXamarin.Services
                 await blob.UploadFromByteArrayAsync(photo,0,photo.Length);
 
                 return blob.Uri.ToString();
-        ***REMOVED***
+            }
             catch (Exception ex)
-            ***REMOVED***
+            {
 
                 throw;
-        ***REMOVED***
+            }
 
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        }
+    }
+}

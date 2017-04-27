@@ -12,25 +12,25 @@
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("CursoXamarin.Droid.Resource", IsApplication=true)]
 
 namespace CursoXamarin.Droid
-***REMOVED***
+{
 	
 	
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
-	***REMOVED***
+	{
 		
 		static Resource()
-		***REMOVED***
+		{
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-		***REMOVED***
+		}
 		
 		public static void UpdateIdValues()
-		***REMOVED***
+		{
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::CursoXamarin.Droid.Resource.Attribute.actionBarSize;
-		***REMOVED***
+		}
 		
 		public partial class Animation
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f040000
 			public const int abc_fade_in = 2130968576;
@@ -81,33 +81,33 @@ namespace CursoXamarin.Droid
 			public const int design_snackbar_out = 2130968591;
 			
 			static Animation()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Animation()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Animator
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f050000
 			public const int design_appbar_state_list_animator = 2131034112;
 			
 			static Animator()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Animator()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Attribute
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f01005d
 			public const int actionBarDivider = 2130772061;
@@ -1124,17 +1124,17 @@ namespace CursoXamarin.Droid
 			public const int windowNoTitle = 2130772041;
 			
 			static Attribute()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Attribute()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Boolean
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f0d0000
 			public const int abc_action_bar_embed_tabs = 2131558400;
@@ -1152,17 +1152,17 @@ namespace CursoXamarin.Droid
 			public const int abc_config_showMenuShortcutsWhenKeyboardPresent = 2131558404;
 			
 			static Boolean()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Boolean()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Color
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f0c004a
 			public const int abc_background_cache_hint_selector_material_dark = 2131492938;
@@ -1462,17 +1462,17 @@ namespace CursoXamarin.Droid
 			public const int switch_thumb_normal_material_light = 2131492926;
 			
 			static Color()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Color()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Dimension
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f070018
 			public const int abc_action_bar_content_inset_material = 2131165208;
@@ -1919,17 +1919,17 @@ namespace CursoXamarin.Droid
 			public const int notification_top_pad_large_text = 2131165293;
 			
 			static Dimension()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Dimension()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Drawable
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f020000
 			public const int abc_ab_share_pack_mtrl_alpha = 2130837504;
@@ -2742,17 +2742,17 @@ namespace CursoXamarin.Droid
 			public const int notify_panel_notification_icon_bg = 2130837771;
 			
 			static Drawable()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Drawable()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Id
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f08009c
 			public const int action0 = 2131230876;
@@ -3295,17 +3295,17 @@ namespace CursoXamarin.Droid
 			public const int wrap_content = 2131230751;
 			
 			static Id()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Id()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Integer
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f0a0003
 			public const int abc_config_activityDefaultDur = 2131361795;
@@ -3344,17 +3344,17 @@ namespace CursoXamarin.Droid
 			public const int status_bar_notification_info_maxnum = 2131361798;
 			
 			static Integer()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Integer()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Interpolator
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f060000
 			public const int mr_fast_out_slow_in = 2131099648;
@@ -3363,17 +3363,17 @@ namespace CursoXamarin.Droid
 			public const int mr_linear_out_slow_in = 2131099649;
 			
 			static Interpolator()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Interpolator()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Layout
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f030000
 			public const int abc_action_bar_title_item = 2130903040;
@@ -3580,17 +3580,17 @@ namespace CursoXamarin.Droid
 			public const int Toolbar = 2130903107;
 			
 			static Layout()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Layout()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class String
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;
@@ -3779,17 +3779,17 @@ namespace CursoXamarin.Droid
 			public const int status_bar_notification_info_overflow = 2131296297;
 			
 			static String()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private String()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Style
-		***REMOVED***
+		{
 			
 			// aapt resource value: 0x7f0b00ae
 			public const int AlertDialog_AppCompat = 2131427502;
@@ -4980,19 +4980,19 @@ namespace CursoXamarin.Droid
 			public const int Widget_MediaRouter_MediaRouteButton = 2131427338;
 			
 			static Style()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Style()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
+			{
+			}
+		}
 		
 		public partial class Styleable
-		***REMOVED***
+		{
 			
-			public static int[] ActionBar = new int[] ***REMOVED***
+			public static int[] ActionBar = new int[] {
 					2130771997,
 					2130771999,
 					2130772000,
@@ -5021,7 +5021,7 @@ namespace CursoXamarin.Droid
 					2130772023,
 					2130772024,
 					2130772025,
-					2130772087***REMOVED***;
+					2130772087};
 			
 			// aapt resource value: 10
 			public const int ActionBar_background = 10;
@@ -5110,27 +5110,27 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 5
 			public const int ActionBar_titleTextStyle = 5;
 			
-			public static int[] ActionBarLayout = new int[] ***REMOVED***
-					16842931***REMOVED***;
+			public static int[] ActionBarLayout = new int[] {
+					16842931};
 			
 			// aapt resource value: 0
 			public const int ActionBarLayout_android_layout_gravity = 0;
 			
-			public static int[] ActionMenuItemView = new int[] ***REMOVED***
-					16843071***REMOVED***;
+			public static int[] ActionMenuItemView = new int[] {
+					16843071};
 			
 			// aapt resource value: 0
 			public const int ActionMenuItemView_android_minWidth = 0;
 			
 			public static int[] ActionMenuView;
 			
-			public static int[] ActionMode = new int[] ***REMOVED***
+			public static int[] ActionMode = new int[] {
 					2130771997,
 					2130772003,
 					2130772004,
 					2130772008,
 					2130772010,
-					2130772026***REMOVED***;
+					2130772026};
 			
 			// aapt resource value: 3
 			public const int ActionMode_background = 3;
@@ -5150,9 +5150,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int ActionMode_titleTextStyle = 1;
 			
-			public static int[] ActivityChooserView = new int[] ***REMOVED***
+			public static int[] ActivityChooserView = new int[] {
 					2130772027,
-					2130772028***REMOVED***;
+					2130772028};
 			
 			// aapt resource value: 1
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
@@ -5160,14 +5160,14 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 0
 			public const int ActivityChooserView_initialActivityCount = 0;
 			
-			public static int[] AlertDialog = new int[] ***REMOVED***
+			public static int[] AlertDialog = new int[] {
 					16842994,
 					2130772029,
 					2130772030,
 					2130772031,
 					2130772032,
 					2130772033,
-					2130772034***REMOVED***;
+					2130772034};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -5190,10 +5190,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 4
 			public const int AlertDialog_singleChoiceItemLayout = 4;
 			
-			public static int[] AppBarLayout = new int[] ***REMOVED***
+			public static int[] AppBarLayout = new int[] {
 					16842964,
 					2130772024,
-					2130772224***REMOVED***;
+					2130772224};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
@@ -5204,9 +5204,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int AppBarLayout_expanded = 2;
 			
-			public static int[] AppBarLayoutStates = new int[] ***REMOVED***
+			public static int[] AppBarLayoutStates = new int[] {
 					2130772225,
-					2130772226***REMOVED***;
+					2130772226};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -5214,9 +5214,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int AppBarLayoutStates_state_collapsible = 1;
 			
-			public static int[] AppBarLayout_Layout = new int[] ***REMOVED***
+			public static int[] AppBarLayout_Layout = new int[] {
 					2130772227,
-					2130772228***REMOVED***;
+					2130772228};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_Layout_layout_scrollFlags = 0;
@@ -5224,9 +5224,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
 			
-			public static int[] AppCompatImageView = new int[] ***REMOVED***
+			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130772035***REMOVED***;
+					2130772035};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -5234,11 +5234,11 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int AppCompatImageView_srcCompat = 1;
 			
-			public static int[] AppCompatSeekBar = new int[] ***REMOVED***
+			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
 					2130772036,
 					2130772037,
-					2130772038***REMOVED***;
+					2130772038};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -5252,14 +5252,14 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 3
 			public const int AppCompatSeekBar_tickMarkTintMode = 3;
 			
-			public static int[] AppCompatTextHelper = new int[] ***REMOVED***
+			public static int[] AppCompatTextHelper = new int[] {
 					16842804,
 					16843117,
 					16843118,
 					16843119,
 					16843120,
 					16843666,
-					16843667***REMOVED***;
+					16843667};
 			
 			// aapt resource value: 2
 			public const int AppCompatTextHelper_android_drawableBottom = 2;
@@ -5282,9 +5282,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 0
 			public const int AppCompatTextHelper_android_textAppearance = 0;
 			
-			public static int[] AppCompatTextView = new int[] ***REMOVED***
+			public static int[] AppCompatTextView = new int[] {
 					16842804,
-					2130772039***REMOVED***;
+					2130772039};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -5292,7 +5292,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int AppCompatTextView_textAllCaps = 1;
 			
-			public static int[] AppCompatTheme = new int[] ***REMOVED***
+			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
 					2130772040,
@@ -5407,7 +5407,7 @@ namespace CursoXamarin.Droid
 					2130772149,
 					2130772150,
 					2130772151,
-					2130772152***REMOVED***;
+					2130772152};
 			
 			// aapt resource value: 23
 			public const int AppCompatTheme_actionBarDivider = 23;
@@ -5754,12 +5754,12 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 3
 			public const int AppCompatTheme_windowNoTitle = 3;
 			
-			public static int[] BottomNavigationView = new int[] ***REMOVED***
+			public static int[] BottomNavigationView = new int[] {
 					2130772024,
 					2130772267,
 					2130772268,
 					2130772269,
-					2130772270***REMOVED***;
+					2130772270};
 			
 			// aapt resource value: 0
 			public const int BottomNavigationView_elevation = 0;
@@ -5776,10 +5776,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int BottomNavigationView_menu = 1;
 			
-			public static int[] BottomSheetBehavior_Layout = new int[] ***REMOVED***
+			public static int[] BottomSheetBehavior_Layout = new int[] {
 					2130772229,
 					2130772230,
-					2130772231***REMOVED***;
+					2130772231};
 			
 			// aapt resource value: 1
 			public const int BottomSheetBehavior_Layout_behavior_hideable = 1;
@@ -5790,13 +5790,13 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
 			
-			public static int[] ButtonBarLayout = new int[] ***REMOVED***
-					2130772153***REMOVED***;
+			public static int[] ButtonBarLayout = new int[] {
+					2130772153};
 			
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
 			
-			public static int[] CardView = new int[] ***REMOVED***
+			public static int[] CardView = new int[] {
 					16843071,
 					16843072,
 					2130771985,
@@ -5809,7 +5809,7 @@ namespace CursoXamarin.Droid
 					2130771992,
 					2130771993,
 					2130771994,
-					2130771995***REMOVED***;
+					2130771995};
 			
 			// aapt resource value: 1
 			public const int CardView_android_minHeight = 1;
@@ -5850,7 +5850,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 11
 			public const int CardView_contentPaddingTop = 11;
 			
-			public static int[] CollapsingToolbarLayout = new int[] ***REMOVED***
+			public static int[] CollapsingToolbarLayout = new int[] {
 					2130771999,
 					2130772232,
 					2130772233,
@@ -5866,7 +5866,7 @@ namespace CursoXamarin.Droid
 					2130772243,
 					2130772244,
 					2130772245,
-					2130772246***REMOVED***;
+					2130772246};
 			
 			// aapt resource value: 13
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 13;
@@ -5916,9 +5916,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 10
 			public const int CollapsingToolbarLayout_toolbarId = 10;
 			
-			public static int[] CollapsingToolbarLayout_Layout = new int[] ***REMOVED***
+			public static int[] CollapsingToolbarLayout_Layout = new int[] {
 					2130772247,
-					2130772248***REMOVED***;
+					2130772248};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
@@ -5926,10 +5926,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
 			
-			public static int[] ColorStateListItem = new int[] ***REMOVED***
+			public static int[] ColorStateListItem = new int[] {
 					16843173,
 					16843551,
-					2130772154***REMOVED***;
+					2130772154};
 			
 			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
@@ -5940,10 +5940,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 0
 			public const int ColorStateListItem_android_color = 0;
 			
-			public static int[] CompoundButton = new int[] ***REMOVED***
+			public static int[] CompoundButton = new int[] {
 					16843015,
 					2130772155,
-					2130772156***REMOVED***;
+					2130772156};
 			
 			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
@@ -5954,9 +5954,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int CompoundButton_buttonTintMode = 2;
 			
-			public static int[] CoordinatorLayout = new int[] ***REMOVED***
+			public static int[] CoordinatorLayout = new int[] {
 					2130772249,
-					2130772250***REMOVED***;
+					2130772250};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -5964,14 +5964,14 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int CoordinatorLayout_statusBarBackground = 1;
 			
-			public static int[] CoordinatorLayout_Layout = new int[] ***REMOVED***
+			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
 					2130772251,
 					2130772252,
 					2130772253,
 					2130772254,
 					2130772255,
-					2130772256***REMOVED***;
+					2130772256};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
@@ -5994,10 +5994,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 3
 			public const int CoordinatorLayout_Layout_layout_keyline = 3;
 			
-			public static int[] DesignTheme = new int[] ***REMOVED***
+			public static int[] DesignTheme = new int[] {
 					2130772257,
 					2130772258,
-					2130772259***REMOVED***;
+					2130772259};
 			
 			// aapt resource value: 0
 			public const int DesignTheme_bottomSheetDialogTheme = 0;
@@ -6008,7 +6008,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int DesignTheme_textColorError = 2;
 			
-			public static int[] DrawerArrowToggle = new int[] ***REMOVED***
+			public static int[] DrawerArrowToggle = new int[] {
 					2130772157,
 					2130772158,
 					2130772159,
@@ -6016,7 +6016,7 @@ namespace CursoXamarin.Droid
 					2130772161,
 					2130772162,
 					2130772163,
-					2130772164***REMOVED***;
+					2130772164};
 			
 			// aapt resource value: 4
 			public const int DrawerArrowToggle_arrowHeadLength = 4;
@@ -6042,7 +6042,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
-			public static int[] FloatingActionButton = new int[] ***REMOVED***
+			public static int[] FloatingActionButton = new int[] {
 					2130772024,
 					2130772222,
 					2130772223,
@@ -6050,7 +6050,7 @@ namespace CursoXamarin.Droid
 					2130772261,
 					2130772262,
 					2130772263,
-					2130772264***REMOVED***;
+					2130772264};
 			
 			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTint = 1;
@@ -6076,16 +6076,16 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 7
 			public const int FloatingActionButton_useCompatPadding = 7;
 			
-			public static int[] FloatingActionButton_Behavior_Layout = new int[] ***REMOVED***
-					2130772265***REMOVED***;
+			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
+					2130772265};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
 			
-			public static int[] ForegroundLinearLayout = new int[] ***REMOVED***
+			public static int[] ForegroundLinearLayout = new int[] {
 					16843017,
 					16843264,
-					2130772266***REMOVED***;
+					2130772266};
 			
 			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
@@ -6096,7 +6096,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int ForegroundLinearLayout_foregroundInsidePadding = 2;
 			
-			public static int[] LinearLayoutCompat = new int[] ***REMOVED***
+			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
 					16842948,
 					16843046,
@@ -6105,7 +6105,7 @@ namespace CursoXamarin.Droid
 					2130772007,
 					2130772165,
 					2130772166,
-					2130772167***REMOVED***;
+					2130772167};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -6134,11 +6134,11 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 7
 			public const int LinearLayoutCompat_showDividers = 7;
 			
-			public static int[] LinearLayoutCompat_Layout = new int[] ***REMOVED***
+			public static int[] LinearLayoutCompat_Layout = new int[] {
 					16842931,
 					16842996,
 					16842997,
-					16843137***REMOVED***;
+					16843137};
 			
 			// aapt resource value: 0
 			public const int LinearLayoutCompat_Layout_android_layout_gravity = 0;
@@ -6152,9 +6152,9 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int LinearLayoutCompat_Layout_android_layout_width = 1;
 			
-			public static int[] ListPopupWindow = new int[] ***REMOVED***
+			public static int[] ListPopupWindow = new int[] {
 					16843436,
-					16843437***REMOVED***;
+					16843437};
 			
 			// aapt resource value: 0
 			public const int ListPopupWindow_android_dropDownHorizontalOffset = 0;
@@ -6162,11 +6162,11 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
 			
-			public static int[] MediaRouteButton = new int[] ***REMOVED***
+			public static int[] MediaRouteButton = new int[] {
 					16843071,
 					16843072,
 					2130771984,
-					2130772155***REMOVED***;
+					2130772155};
 			
 			// aapt resource value: 1
 			public const int MediaRouteButton_android_minHeight = 1;
@@ -6180,13 +6180,13 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int MediaRouteButton_externalRouteEnabledDrawable = 2;
 			
-			public static int[] MenuGroup = new int[] ***REMOVED***
+			public static int[] MenuGroup = new int[] {
 					16842766,
 					16842960,
 					16843156,
 					16843230,
 					16843231,
-					16843232***REMOVED***;
+					16843232};
 			
 			// aapt resource value: 5
 			public const int MenuGroup_android_checkableBehavior = 5;
@@ -6206,7 +6206,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
 			
-			public static int[] MenuItem = new int[] ***REMOVED***
+			public static int[] MenuItem = new int[] {
 					16842754,
 					16842766,
 					16842960,
@@ -6223,7 +6223,7 @@ namespace CursoXamarin.Droid
 					2130772168,
 					2130772169,
 					2130772170,
-					2130772171***REMOVED***;
+					2130772171};
 			
 			// aapt resource value: 14
 			public const int MenuItem_actionLayout = 14;
@@ -6276,7 +6276,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 13
 			public const int MenuItem_showAsAction = 13;
 			
-			public static int[] MenuView = new int[] ***REMOVED***
+			public static int[] MenuView = new int[] {
 					16842926,
 					16843052,
 					16843053,
@@ -6285,7 +6285,7 @@ namespace CursoXamarin.Droid
 					16843056,
 					16843057,
 					2130772172,
-					2130772173***REMOVED***;
+					2130772173};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -6314,7 +6314,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 8
 			public const int MenuView_subMenuArrow = 8;
 			
-			public static int[] NavigationView = new int[] ***REMOVED***
+			public static int[] NavigationView = new int[] {
 					16842964,
 					16842973,
 					16843039,
@@ -6324,7 +6324,7 @@ namespace CursoXamarin.Droid
 					2130772269,
 					2130772270,
 					2130772271,
-					2130772272***REMOVED***;
+					2130772272};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -6356,10 +6356,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 4
 			public const int NavigationView_menu = 4;
 			
-			public static int[] PopupWindow = new int[] ***REMOVED***
+			public static int[] PopupWindow = new int[] {
 					16843126,
 					16843465,
-					2130772174***REMOVED***;
+					2130772174};
 			
 			// aapt resource value: 1
 			public const int PopupWindow_android_popupAnimationStyle = 1;
@@ -6370,15 +6370,15 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int PopupWindow_overlapAnchor = 2;
 			
-			public static int[] PopupWindowBackgroundState = new int[] ***REMOVED***
-					2130772175***REMOVED***;
+			public static int[] PopupWindowBackgroundState = new int[] {
+					2130772175};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
-			public static int[] RecycleListView = new int[] ***REMOVED***
+			public static int[] RecycleListView = new int[] {
 					2130772176,
-					2130772177***REMOVED***;
+					2130772177};
 			
 			// aapt resource value: 0
 			public const int RecycleListView_paddingBottomNoButtons = 0;
@@ -6386,13 +6386,13 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 1
 			public const int RecycleListView_paddingTopNoTitle = 1;
 			
-			public static int[] RecyclerView = new int[] ***REMOVED***
+			public static int[] RecyclerView = new int[] {
 					16842948,
 					16842993,
 					2130771968,
 					2130771969,
 					2130771970,
-					2130771971***REMOVED***;
+					2130771971};
 			
 			// aapt resource value: 1
 			public const int RecyclerView_android_descendantFocusability = 1;
@@ -6412,19 +6412,19 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 5
 			public const int RecyclerView_stackFromEnd = 5;
 			
-			public static int[] ScrimInsetsFrameLayout = new int[] ***REMOVED***
-					2130772273***REMOVED***;
+			public static int[] ScrimInsetsFrameLayout = new int[] {
+					2130772273};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
-			public static int[] ScrollingViewBehavior_Layout = new int[] ***REMOVED***
-					2130772274***REMOVED***;
+			public static int[] ScrollingViewBehavior_Layout = new int[] {
+					2130772274};
 			
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
 			
-			public static int[] SearchView = new int[] ***REMOVED***
+			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
 					16843296,
@@ -6441,7 +6441,7 @@ namespace CursoXamarin.Droid
 					2130772187,
 					2130772188,
 					2130772189,
-					2130772190***REMOVED***;
+					2130772190};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -6494,10 +6494,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 12
 			public const int SearchView_voiceIcon = 12;
 			
-			public static int[] SnackbarLayout = new int[] ***REMOVED***
+			public static int[] SnackbarLayout = new int[] {
 					16843039,
 					2130772024,
-					2130772275***REMOVED***;
+					2130772275};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -6508,12 +6508,12 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int SnackbarLayout_maxActionInlineWidth = 2;
 			
-			public static int[] Spinner = new int[] ***REMOVED***
+			public static int[] Spinner = new int[] {
 					16842930,
 					16843126,
 					16843131,
 					16843362,
-					2130772025***REMOVED***;
+					2130772025};
 			
 			// aapt resource value: 3
 			public const int Spinner_android_dropDownWidth = 3;
@@ -6530,7 +6530,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 4
 			public const int Spinner_popupTheme = 4;
 			
-			public static int[] SwitchCompat = new int[] ***REMOVED***
+			public static int[] SwitchCompat = new int[] {
 					16843044,
 					16843045,
 					16843074,
@@ -6544,7 +6544,7 @@ namespace CursoXamarin.Droid
 					2130772198,
 					2130772199,
 					2130772200,
-					2130772201***REMOVED***;
+					2130772201};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -6588,10 +6588,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 7
 			public const int SwitchCompat_trackTintMode = 7;
 			
-			public static int[] TabItem = new int[] ***REMOVED***
+			public static int[] TabItem = new int[] {
 					16842754,
 					16842994,
-					16843087***REMOVED***;
+					16843087};
 			
 			// aapt resource value: 0
 			public const int TabItem_android_icon = 0;
@@ -6602,7 +6602,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int TabItem_android_text = 2;
 			
-			public static int[] TabLayout = new int[] ***REMOVED***
+			public static int[] TabLayout = new int[] {
 					2130772276,
 					2130772277,
 					2130772278,
@@ -6618,7 +6618,7 @@ namespace CursoXamarin.Droid
 					2130772288,
 					2130772289,
 					2130772290,
-					2130772291***REMOVED***;
+					2130772291};
 			
 			// aapt resource value: 3
 			public const int TabLayout_tabBackground = 3;
@@ -6668,7 +6668,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 9
 			public const int TabLayout_tabTextColor = 9;
 			
-			public static int[] TextAppearance = new int[] ***REMOVED***
+			public static int[] TextAppearance = new int[] {
 					16842901,
 					16842902,
 					16842903,
@@ -6678,7 +6678,7 @@ namespace CursoXamarin.Droid
 					16843106,
 					16843107,
 					16843108,
-					2130772039***REMOVED***;
+					2130772039};
 			
 			// aapt resource value: 5
 			public const int TextAppearance_android_shadowColor = 5;
@@ -6710,7 +6710,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 9
 			public const int TextAppearance_textAllCaps = 9;
 			
-			public static int[] TextInputLayout = new int[] ***REMOVED***
+			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
 					2130772292,
@@ -6726,7 +6726,7 @@ namespace CursoXamarin.Droid
 					2130772302,
 					2130772303,
 					2130772304,
-					2130772305***REMOVED***;
+					2130772305};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -6776,7 +6776,7 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 15
 			public const int TextInputLayout_passwordToggleTintMode = 15;
 			
-			public static int[] Toolbar = new int[] ***REMOVED***
+			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
 					2130771999,
@@ -6805,7 +6805,7 @@ namespace CursoXamarin.Droid
 					2130772215,
 					2130772216,
 					2130772217,
-					2130772218***REMOVED***;
+					2130772218};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -6894,12 +6894,12 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 27
 			public const int Toolbar_titleTextColor = 27;
 			
-			public static int[] View = new int[] ***REMOVED***
+			public static int[] View = new int[] {
 					16842752,
 					16842970,
 					2130772219,
 					2130772220,
-					2130772221***REMOVED***;
+					2130772221};
 			
 			// aapt resource value: 1
 			public const int View_android_focusable = 1;
@@ -6916,10 +6916,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 4
 			public const int View_theme = 4;
 			
-			public static int[] ViewBackgroundHelper = new int[] ***REMOVED***
+			public static int[] ViewBackgroundHelper = new int[] {
 					16842964,
 					2130772222,
-					2130772223***REMOVED***;
+					2130772223};
 			
 			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;
@@ -6930,10 +6930,10 @@ namespace CursoXamarin.Droid
 			// aapt resource value: 2
 			public const int ViewBackgroundHelper_backgroundTintMode = 2;
 			
-			public static int[] ViewStubCompat = new int[] ***REMOVED***
+			public static int[] ViewStubCompat = new int[] {
 					16842960,
 					16842994,
-					16842995***REMOVED***;
+					16842995};
 			
 			// aapt resource value: 0
 			public const int ViewStubCompat_android_id = 0;
@@ -6945,14 +6945,14 @@ namespace CursoXamarin.Droid
 			public const int ViewStubCompat_android_layout = 1;
 			
 			static Styleable()
-			***REMOVED***
+			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			***REMOVED***
+			}
 			
 			private Styleable()
-			***REMOVED***
-			***REMOVED***
-		***REMOVED***
-	***REMOVED***
-***REMOVED***
+			{
+			}
+		}
+	}
+}
 #pragma warning restore 1591

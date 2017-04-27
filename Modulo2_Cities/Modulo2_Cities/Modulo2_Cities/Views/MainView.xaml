@@ -11,20 +11,20 @@
             <Button 
                 Grid.Row="0"
                 Text="New"
-                Command="***REMOVED***Binding NewCommand***REMOVED***"/>
+                Command="{Binding NewCommand}"/>
             <ListView 
                 Grid.Row="1"
-                ItemsSource="***REMOVED***Binding Cities***REMOVED***"
-                SelectedItem="***REMOVED***Binding SelectedItem, Mode=TwoWay***REMOVED***"
-                IsRefreshing="***REMOVED***Binding IsBusy, Mode=OneWay***REMOVED***"
+                ItemsSource="{Binding Cities}"
+                SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                 IsPullToRefreshEnabled="True"
-                RefreshCommand="***REMOVED***Binding RefreshCommand***REMOVED***">
+                RefreshCommand="{Binding RefreshCommand}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ImageCell
-                      ImageSource = "***REMOVED***Binding Image***REMOVED***"
-                      Text="***REMOVED***Binding Name***REMOVED***"
-                      Detail="***REMOVED***Binding Detail***REMOVED***"/>
+                      ImageSource = "{Binding Image}"
+                      Text="{Binding Name}"
+                      Detail="{Binding Detail}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView> 
