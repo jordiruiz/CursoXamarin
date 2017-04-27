@@ -8,12 +8,12 @@ using Android.Widget;
 using Android.OS;
 
 namespace CursoXamarin.Droid
-***REMOVED***
+{
     [Activity(Label = "CursoXamarin", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
-    ***REMOVED***
+    {
         protected override void OnCreate(Bundle bundle)
-        ***REMOVED***
+        {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -23,7 +23,7 @@ namespace CursoXamarin.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        }
+    }
+}
 

@@ -2,14 +2,14 @@
 using System.Web.Optimization;
 
 namespace Modulo3_Backend
-***REMOVED***
+{
     public class BundleConfig
-    ***REMOVED***
+    {
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
-        ***REMOVED***
+        {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-***REMOVED***version***REMOVED***.js"));
+                        "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -25,6 +25,6 @@ namespace Modulo3_Backend
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        }
+    }
+}

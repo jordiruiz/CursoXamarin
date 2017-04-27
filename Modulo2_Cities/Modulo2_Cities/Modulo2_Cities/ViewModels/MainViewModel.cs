@@ -2,51 +2,90 @@
 using CursoXamarin.Services;
 using CursoXamarin.ViewModels.Base;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace CursoXamarin.ViewModels
-***REMOVED***
+{
     public class MainViewModel : ViewModelBase
-    ***REMOVED***
+    {
         public ObservableCollection<City> _cities;
         private City _selectedItem;
         private IRepoService<City> _cityService;
+        private bool _isBusy;
+
+        public ICommand NewCommand => new Command(New);
+        public ICommand RefreshCommand => new Command(async () => await RefreshAsync());
 
         public MainViewModel()
-        ***REMOVED***
+        {
             _cityService = App.Container.GetService(typeof(IRepoService<City>)) as IRepoService<City>;            
-    ***REMOVED***
+        }
         
         public ObservableCollection<City> Cities
-        ***REMOVED***
-            get ***REMOVED*** return _cities;***REMOVED***
+        {
+            get { return _cities;}
             set
-            ***REMOVED***
+            {
                 _cities = value;
                 OnPropertyChanged("Cities");
-        ***REMOVED***
-    ***REMOVED***
+            }
+        }
 
         public City SelectedItem
-        ***REMOVED***
-            get ***REMOVED*** return _selectedItem; ***REMOVED***
+        {
+            get { return _selectedItem; }
             set
-            ***REMOVED***
+            {
                 _selectedItem = value;
 
                 NavigationService.Instance.NavigateTo<CityDetailViewModel>(_selectedItem);
-        ***REMOVED***
-    ***REMOVED***
+            }
+        }
+
+        public bool IsBusy
+        {
+            get { return _isBusy; }
+            set
+            {
+                if (_isBusy == value)
+                    return;
+
+                _isBusy = value;
+                OnPropertyChanged("IsBusy");
+            }
+        }        
 
         public override async void OnAppearing(object navigationContext)
-        ***REMOVED***
+        {
             base.OnAppearing(navigationContext);
+
+            await LoadCitiesAsync();
+        }
+
+        private async Task LoadCitiesAsync()
+        {
+            IsBusy = true;
 
             var result = await _cityService.GetAll();
 
             if (result != null)
-            ***REMOVED***
+            {
                 Cities = new ObservableCollection<City>(result);
-        ***REMOVED***
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+            }
+
+            IsBusy = false;
+        }
+
+        private void New()
+        {
+            NavigationService.Instance.NavigateTo<NewCityViewModel>();
+        }
+
+        private async Task RefreshAsync()
+        {
+            await LoadCitiesAsync();
+        }
+    }
+}
