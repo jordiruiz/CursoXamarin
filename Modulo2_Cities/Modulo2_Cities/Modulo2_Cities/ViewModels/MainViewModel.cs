@@ -2,6 +2,7 @@
 using CursoXamarin.Services;
 using CursoXamarin.ViewModels.Base;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -12,7 +13,10 @@ namespace CursoXamarin.ViewModels
         public ObservableCollection<City> _cities;
         private City _selectedItem;
         private IRepoService<City> _cityService;
+        private bool _isBusy;
+
         public ICommand NewCommand => new Command(New);
+        public ICommand RefreshCommand => new Command(async () => await RefreshAsync());
 
         public MainViewModel()
         ***REMOVED***
@@ -40,9 +44,29 @@ namespace CursoXamarin.ViewModels
         ***REMOVED***
     ***REMOVED***
 
+        public bool IsBusy
+        ***REMOVED***
+            get ***REMOVED*** return _isBusy; ***REMOVED***
+            set
+            ***REMOVED***
+                if (_isBusy == value)
+                    return;
+
+                _isBusy = value;
+                OnPropertyChanged("IsBusy");
+        ***REMOVED***
+    ***REMOVED***        
+
         public override async void OnAppearing(object navigationContext)
         ***REMOVED***
             base.OnAppearing(navigationContext);
+
+            await LoadCitiesAsync();
+    ***REMOVED***
+
+        private async Task LoadCitiesAsync()
+        ***REMOVED***
+            IsBusy = true;
 
             var result = await _cityService.GetAll();
 
@@ -50,11 +74,18 @@ namespace CursoXamarin.ViewModels
             ***REMOVED***
                 Cities = new ObservableCollection<City>(result);
         ***REMOVED***
+
+            IsBusy = false;
     ***REMOVED***
 
         private void New()
         ***REMOVED***
             NavigationService.Instance.NavigateTo<NewCityViewModel>();
+    ***REMOVED***
+
+        private async Task RefreshAsync()
+        ***REMOVED***
+            await LoadCitiesAsync();
     ***REMOVED***
 ***REMOVED***
 ***REMOVED***
