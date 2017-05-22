@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace CursoXamarin.Services
@@ -8,5 +9,6 @@ namespace CursoXamarin.Services
         Task<IEnumerable<T>> GetAll();
         Task AddOrUpdateCityAsync(T Item);
         Task DeleteCityAsync(T Item);
+        IMobileServiceClient Client { get; }
     }
 }
