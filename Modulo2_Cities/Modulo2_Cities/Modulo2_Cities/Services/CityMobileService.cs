@@ -19,7 +19,7 @@ namespace CursoXamarin.Services
     public class CityMobileService : IRepoService<City>
     {
         private IMobileServiceSyncTable<City> _cityTable;
-        MobileServiceClient mobileService;
+        MobileServiceClient _mobileService;
 
         private static CityMobileService _instance;
 
@@ -35,19 +35,24 @@ namespace CursoXamarin.Services
             return _instance;
         }
 
+        public IMobileServiceClient Client
+        {
+            get { return _mobileService; }
+        }
+
         public async Task InitializeAsync()
         {
-            if (mobileService != null)
+            if (_mobileService != null)
                 return;
 
             // Inicialización de SQLite local (cache offline)
             var store = new MobileServiceSQLiteStore("cursoxamarin.db");
             store.DefineTable<City>();
 
-            mobileService = new MobileServiceClient(GlobalSettings.CityMobileServiceEndpoint);
-            _cityTable = mobileService.GetSyncTable<City>();
+            _mobileService = new MobileServiceClient(GlobalSettings.CityMobileServiceEndpoint);
+            _cityTable = _mobileService.GetSyncTable<City>();
 
-            await mobileService.SyncContext.InitializeAsync(store,
+            await _mobileService.SyncContext.InitializeAsync(store,
                 new MobileServiceSyncHandler());
 
             if (CrossConnectivity.Current.IsConnected)
@@ -68,7 +73,7 @@ namespace CursoXamarin.Services
                     }                    
 
                     // Subir cambios a la base de datos remota
-                    await mobileService.SyncContext.PushAsync();
+                    await _mobileService.SyncContext.PushAsync();
 
                     await _cityTable.PullAsync(
                         "allCities", _cityTable.CreateQuery());
@@ -141,7 +146,7 @@ namespace CursoXamarin.Services
             try
             {
                 // Subir cambios a la base de datos remota
-                await mobileService.SyncContext.PushAsync();
+                await _mobileService.SyncContext.PushAsync();
 
                 // El primer parámetro es el nombre de la query utilizada intermanente por el client SDK para implementar sync.
                 // Utiliza uno diferente por cada query en la App

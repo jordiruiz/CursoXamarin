@@ -4,6 +4,7 @@ using Ninject;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace CursoXamarin.Services
 {
@@ -11,6 +12,8 @@ namespace CursoXamarin.Services
     {
         private static IEnumerable<City> _cities;
         private static CityService _instance;
+
+        public IMobileServiceClient Client => throw new NotImplementedException();
 
         public static CityService GetInstance(IKernel kernelForInjection)
         {
